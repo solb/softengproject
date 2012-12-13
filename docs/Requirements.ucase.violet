@@ -41,8 +41,8 @@
    </object>
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
-     <double>493.0</double>
-     <double>213.0</double>
+     <double>566.0</double>
+     <double>239.0</double>
     </void>
    </object>
   </void>
@@ -50,7 +50,7 @@
    <object id="UseCaseNode0" class="com.horstmann.violet.UseCaseNode">
     <void property="name">
      <void property="text">
-      <string>Purchase item</string>
+      <string>Cash purchase</string>
      </void>
     </void>
    </object>
@@ -71,8 +71,8 @@
    </object>
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
-     <double>145.0</double>
-     <double>90.0</double>
+     <double>147.0</double>
+     <double>219.0</double>
     </void>
    </object>
   </void>
@@ -86,8 +86,8 @@
    </object>
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
-     <double>151.0</double>
-     <double>159.0</double>
+     <double>150.0</double>
+     <double>291.0</double>
     </void>
    </object>
   </void>
@@ -101,8 +101,8 @@
    </object>
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
-     <double>146.0</double>
-     <double>233.0</double>
+     <double>147.0</double>
+     <double>359.0</double>
     </void>
    </object>
   </void>
@@ -116,8 +116,8 @@
    </object>
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
-     <double>216.0</double>
-     <double>336.0</double>
+     <double>308.0</double>
+     <double>311.0</double>
     </void>
    </object>
   </void>
@@ -131,8 +131,8 @@
    </object>
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
-     <double>223.0</double>
-     <double>393.0</double>
+     <double>308.0</double>
+     <double>355.0</double>
     </void>
    </object>
   </void>
@@ -146,8 +146,8 @@
    </object>
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
-     <double>207.0</double>
-     <double>461.0</double>
+     <double>301.0</double>
+     <double>428.0</double>
     </void>
    </object>
   </void>
@@ -161,8 +161,8 @@
    </object>
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
-     <double>197.0</double>
-     <double>551.0</double>
+     <double>287.0</double>
+     <double>516.0</double>
     </void>
    </object>
   </void>
@@ -176,8 +176,8 @@
    </object>
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
-     <double>289.0</double>
-     <double>20.0</double>
+     <double>308.0</double>
+     <double>21.0</double>
     </void>
    </object>
   </void>
@@ -191,8 +191,8 @@
    </object>
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
-     <double>291.0</double>
-     <double>90.0</double>
+     <double>300.0</double>
+     <double>94.0</double>
     </void>
    </object>
   </void>
@@ -206,8 +206,8 @@
    </object>
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
-     <double>216.0</double>
-     <double>291.0</double>
+     <double>234.0</double>
+     <double>173.0</double>
     </void>
    </object>
   </void>
@@ -221,8 +221,23 @@
    </object>
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
-     <double>288.0</double>
-     <double>177.0</double>
+     <double>299.0</double>
+     <double>224.0</double>
+    </void>
+   </object>
+  </void>
+  <void method="addNode">
+   <object id="UseCaseNode12" class="com.horstmann.violet.UseCaseNode">
+    <void property="name">
+     <void property="text">
+      <string>Account purchase</string>
+     </void>
+    </void>
+   </object>
+   <object class="java.awt.geom.Point2D$Double">
+    <void method="setLocation">
+     <double>139.0</double>
+     <double>92.0</double>
     </void>
    </object>
   </void>
@@ -290,6 +305,11 @@
    <object class="com.horstmann.violet.UseCaseRelationshipEdge"/>
    <object idref="ActorNode2"/>
    <object idref="UseCaseNode11"/>
+  </void>
+  <void method="connect">
+   <object class="com.horstmann.violet.UseCaseRelationshipEdge"/>
+   <object idref="ActorNode0"/>
+   <object idref="UseCaseNode12"/>
   </void>
  </object>
 </java>
