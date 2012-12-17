@@ -5,12 +5,12 @@
    <object id="ClassNode0" class="com.horstmann.violet.ClassNode">
     <void property="attributes">
      <void property="text">
-      <string>-VM : VendingMachine</string>
+      <string>-vm : VendingMachine</string>
      </void>
     </void>
     <void property="methods">
      <void property="text">
-      <string>+tryLogin(int id) : void
+      <string>+tryLogin(id : int) : void
 +cashLogin() : void</string>
      </void>
     </void>
@@ -37,7 +37,7 @@
     </void>
     <void property="methods">
      <void property="text">
-      <string>+trySelection(Pair product) : void
+      <string>+trySelection(product : Pair) : void
 +cancel() : void
 +getBalance() : int</string>
      </void>
@@ -59,7 +59,7 @@
    <object id="ClassNode2" class="com.horstmann.violet.ClassNode">
     <void property="methods">
      <void property="text">
-      <string>+addCash(int cash) : void</string>
+      <string>+addCash(cash : int) : void</string>
      </void>
     </void>
     <void property="name">
@@ -70,7 +70,7 @@
    </object>
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
-     <double>220.0</double>
+     <double>227.0</double>
      <double>237.0</double>
     </void>
    </object>
