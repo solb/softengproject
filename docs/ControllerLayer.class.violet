@@ -90,7 +90,7 @@
    </object>
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
-     <double>476.0</double>
+     <double>512.0</double>
      <double>18.0</double>
     </void>
    </object>
@@ -116,8 +116,115 @@
    </object>
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
-     <double>818.0</double>
-     <double>20.0</double>
+     <double>881.0</double>
+     <double>21.0</double>
+    </void>
+   </object>
+  </void>
+  <void method="addNode">
+   <object class="com.horstmann.violet.ClassNode">
+    <void property="methods">
+     <void property="text">
+      <string>+tryLogin(id : int, password : String)</string>
+     </void>
+    </void>
+    <void property="name">
+     <void property="text">
+      <string>ManagerLoginScreen</string>
+     </void>
+    </void>
+   </object>
+   <object class="java.awt.geom.Point2D$Double">
+    <void method="setLocation">
+     <double>16.0</double>
+     <double>256.0</double>
+    </void>
+   </object>
+  </void>
+  <void method="addNode">
+   <object class="com.horstmann.violet.ClassNode">
+    <void property="attributes">
+     <void property="text">
+      <string>-manny : Manager
+-storefronts : Collection&lt;VendingMachine&gt;</string>
+     </void>
+    </void>
+    <void property="methods">
+     <void property="text">
+      <string>+listLocations() : Collection&lt;Collection&lt;Integer, Integer, String[]&gt;&gt;
++addMachine(locationId : int) : void
++deactivateMachine(id : int) : void
++reactivateMachine(id : int) : void
++changeMachineLocation(id : int, locationId : int) : boolean</string>
+     </void>
+    </void>
+    <void property="name">
+     <void property="text">
+      <string>ManagerMachineManagementScreen</string>
+     </void>
+    </void>
+   </object>
+   <object class="java.awt.geom.Point2D$Double">
+    <void method="setLocation">
+     <double>702.0</double>
+     <double>376.0</double>
+    </void>
+   </object>
+  </void>
+  <void method="addNode">
+   <object class="com.horstmann.violet.ClassNode">
+    <void property="attributes">
+     <void property="text">
+      <string>-manny : Manager</string>
+     </void>
+    </void>
+    <void property="methods">
+     <void property="text">
+      <string>+viewStats() : TODO
++alterLayout(id : int) : ManagerAlterLayoutScreen
++manageItems() : TODO
++manageMachines() : ManagerMachineManagementScreen
++manageUsers() : TODO</string>
+     </void>
+    </void>
+    <void property="name">
+     <void property="text">
+      <string>ManagerHomeScreen</string>
+     </void>
+    </void>
+   </object>
+   <object class="java.awt.geom.Point2D$Double">
+    <void method="setLocation">
+     <double>278.0</double>
+     <double>257.0</double>
+    </void>
+   </object>
+  </void>
+  <void method="addNode">
+   <object class="com.horstmann.violet.ClassNode">
+    <void property="attributes">
+     <void property="text">
+      <string>-manny : Manager
+-machine : VendingMachine</string>
+     </void>
+    </void>
+    <void property="methods">
+     <void property="text">
+      <string>+queueRowChange(row : Point, it : Item) : void
++commitChanges() : bool
++exit() : void</string>
+     </void>
+    </void>
+    <void property="name">
+     <void property="text">
+      <string>ManagerAlterLayoutScreen</string>
+     </void>
+    </void>
+   </object>
+   <object class="java.awt.geom.Point2D$Double">
+    <void method="setLocation">
+     <double>702.0</double>
+     <double>256.0</double>
     </void>
    </object>
   </void>
