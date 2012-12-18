@@ -37,7 +37,7 @@
     </void>
     <void property="methods">
      <void property="text">
-      <string>+tryPurchase(product : Pair) : bool
+      <string>+tryPurchase(product : Pair) : boolean
 +cancel() : void
 +getBalance() : int</string>
      </void>
@@ -90,8 +90,8 @@
    </object>
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
-     <double>512.0</double>
-     <double>18.0</double>
+     <double>533.0</double>
+     <double>15.0</double>
     </void>
    </object>
   </void>
@@ -116,8 +116,8 @@
    </object>
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
-     <double>881.0</double>
-     <double>21.0</double>
+     <double>865.0</double>
+     <double>22.0</double>
     </void>
    </object>
   </void>
@@ -125,7 +125,7 @@
    <object class="com.horstmann.violet.ClassNode">
     <void property="methods">
      <void property="text">
-      <string>+tryLogin(id : int, password : String)</string>
+      <string>+tryLogin(id : int, password : String) : ManagerHomeScreen</string>
      </void>
     </void>
     <void property="name">
@@ -145,8 +145,7 @@
    <object class="com.horstmann.violet.ClassNode">
     <void property="attributes">
      <void property="text">
-      <string>-manny : Manager
--storefronts : Collection&lt;VendingMachine&gt;</string>
+      <string>-storefronts : Collection&lt;VendingMachine&gt;</string>
      </void>
     </void>
     <void property="methods">
@@ -166,8 +165,8 @@
    </object>
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
-     <double>702.0</double>
-     <double>376.0</double>
+     <double>842.0</double>
+     <double>587.0</double>
     </void>
    </object>
   </void>
@@ -182,9 +181,9 @@
      <void property="text">
       <string>+viewStats() : TODO
 +alterLayout(id : int) : ManagerAlterLayoutScreen
-+manageItems() : TODO
++manageItems() : ManagerStockedItemsScreen
 +manageMachines() : ManagerMachineManagementScreen
-+manageUsers() : TODO</string>
++manageUsers() : ManagerUserAccountsScreen</string>
      </void>
     </void>
     <void property="name">
@@ -195,8 +194,8 @@
    </object>
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
-     <double>278.0</double>
-     <double>257.0</double>
+     <double>418.0</double>
+     <double>258.0</double>
     </void>
    </object>
   </void>
@@ -204,14 +203,13 @@
    <object class="com.horstmann.violet.ClassNode">
     <void property="attributes">
      <void property="text">
-      <string>-manny : Manager
--machine : VendingMachine</string>
+      <string>-machine : VendingMachine</string>
      </void>
     </void>
     <void property="methods">
      <void property="text">
       <string>+queueRowChange(row : Point, it : Item) : void
-+commitChanges() : bool
++commitChanges() : boolean
 +exit() : void</string>
      </void>
     </void>
@@ -223,8 +221,96 @@
    </object>
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
-     <double>702.0</double>
-     <double>256.0</double>
+     <double>841.0</double>
+     <double>350.0</double>
+    </void>
+   </object>
+  </void>
+  <void method="addNode">
+   <object class="com.horstmann.violet.ClassNode">
+    <void property="attributes">
+     <void property="text">
+      <string>-stockpile : Collection&lt;Item&gt;</string>
+     </void>
+    </void>
+    <void property="methods">
+     <void property="text">
+      <string>+addItem(name : String, price : int, freshLength : long) : void
++changeItemName(id : int, name : String) : boolean
++changeItemPrice(id : int, price : int) : boolean
++changeItemFreshLength(id : int, freshLength : long) : boolean</string>
+     </void>
+    </void>
+    <void property="name">
+     <void property="text">
+      <string>ManagerStockedItemsScreen</string>
+     </void>
+    </void>
+   </object>
+   <object class="java.awt.geom.Point2D$Double">
+    <void method="setLocation">
+     <double>840.0</double>
+     <double>474.0</double>
+    </void>
+   </object>
+  </void>
+  <void method="addNode">
+   <object class="com.horstmann.violet.ClassNode">
+    <void property="attributes">
+     <void property="text">
+      <string>-users : Collection&lt;User&gt;</string>
+     </void>
+    </void>
+    <void property="methods">
+     <void property="text">
+      <string>+addCustomer(initialBalance : int) : void
++addManager(startingPassword : String) : void
++changePassword(managerId : int, newPassword : String) : void</string>
+     </void>
+    </void>
+    <void property="name">
+     <void property="text">
+      <string>ManagerUserAccountsScreen</string>
+     </void>
+    </void>
+   </object>
+   <object class="java.awt.geom.Point2D$Double">
+    <void method="setLocation">
+     <double>836.0</double>
+     <double>733.0</double>
+    </void>
+   </object>
+  </void>
+  <void method="addNode">
+   <object class="com.horstmann.violet.ClassNode">
+    <void property="attributes">
+     <void property="text">
+      <string>-transactions : Collection&lt;Transaction&gt;
+-machines : Collection&lt;VendingMachine&gt;
+-location : TODO
+-customers : Collection&lt;Customer&gt;</string>
+     </void>
+    </void>
+    <void property="methods">
+     <void property="text">
+      <string>+listMachines() : TODO
++listMachineSales(id : int) : Collection&lt;Transaction&gt;
++listLocations() : TODO
++listLocationSales(id : int) : Collection&lt;Transaction&gt;
++listCustomers() : TODO
++listCustomerSales(id : int) : Collection&lt;Transaction&gt;</string>
+     </void>
+    </void>
+    <void property="name">
+     <void property="text">
+      <string>ManagerReportStatsScreen</string>
+     </void>
+    </void>
+   </object>
+   <object class="java.awt.geom.Point2D$Double">
+    <void method="setLocation">
+     <double>835.0</double>
+     <double>153.0</double>
     </void>
    </object>
   </void>
