@@ -37,7 +37,7 @@
     </void>
     <void property="methods">
      <void property="text">
-      <string>+trySelection(product : Pair) : void
+      <string>+tryPurchase(product : Pair) : bool
 +cancel() : void
 +getBalance() : int</string>
      </void>
@@ -72,6 +72,52 @@
     <void method="setLocation">
      <double>223.0</double>
      <double>148.0</double>
+    </void>
+   </object>
+  </void>
+  <void method="addNode">
+   <object class="com.horstmann.violet.ClassNode">
+    <void property="methods">
+     <void property="text">
+      <string>+tryMachine(id : int) : RestockerTaskListScreen</string>
+     </void>
+    </void>
+    <void property="name">
+     <void property="text">
+      <string>RestockerMachinePickerScreen</string>
+     </void>
+    </void>
+   </object>
+   <object class="java.awt.geom.Point2D$Double">
+    <void method="setLocation">
+     <double>476.0</double>
+     <double>18.0</double>
+    </void>
+   </object>
+  </void>
+  <void method="addNode">
+   <object class="com.horstmann.violet.ClassNode">
+    <void property="attributes">
+     <void property="text">
+      <string>-vm : VendingMachine</string>
+     </void>
+    </void>
+    <void property="methods">
+     <void property="text">
+      <string>+assembleStockingList() : String[]
++completeStocking() : void</string>
+     </void>
+    </void>
+    <void property="name">
+     <void property="text">
+      <string>RestockerTaskListScreen</string>
+     </void>
+    </void>
+   </object>
+   <object class="java.awt.geom.Point2D$Double">
+    <void method="setLocation">
+     <double>818.0</double>
+     <double>20.0</double>
     </void>
    </object>
   </void>
