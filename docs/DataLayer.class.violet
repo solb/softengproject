@@ -17,16 +17,16 @@ User</string>
    </object>
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
-     <double>1327.0</double>
+     <double>1313.0</double>
      <double>68.0</double>
     </void>
    </object>
   </void>
   <void method="addNode">
    <object id="ClassNode1" class="com.horstmann.violet.ClassNode">
-    <void property="methods">
+    <void property="attributes">
      <void property="text">
-      <string>+getMoney() : int</string>
+      <string>-money : int</string>
      </void>
     </void>
     <void property="name">
@@ -44,9 +44,14 @@ User</string>
   </void>
   <void method="addNode">
    <object id="ClassNode2" class="com.horstmann.violet.ClassNode">
+    <void property="attributes">
+     <void property="text">
+      <string>-password : String</string>
+     </void>
+    </void>
     <void property="methods">
      <void property="text">
-      <string>+getPassword() : String</string>
+      <string>+comparePassword(password : String) : boolean</string>
      </void>
     </void>
     <void property="name">
@@ -57,8 +62,8 @@ User</string>
    </object>
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
-     <double>1423.0</double>
-     <double>193.0</double>
+     <double>1318.0</double>
+     <double>194.0</double>
     </void>
    </object>
   </void>
@@ -66,16 +71,12 @@ User</string>
    <object id="ClassNode3" class="com.horstmann.violet.ClassNode">
     <void property="attributes">
      <void property="text">
-      <string>-id : int</string>
-     </void>
-    </void>
-    <void property="methods">
-     <void property="text">
-      <string>+getCurLayout() : VMLayout
-+getNextLayout() : VMLayout
-+getLocation() : Location
-+getActive() : boolean
-+getTransactions() : Collection&lt;Transaction&gt;</string>
+      <string>-id : int
+-active : boolean
+-currentLayout : VMLayout
+-nextLayout : VMLayout
+-location : Location
+-transactions : Collection&lt;Transactions&gt;</string>
      </void>
     </void>
     <void property="name">
@@ -95,12 +96,8 @@ User</string>
    <object id="ClassNode4" class="com.horstmann.violet.ClassNode">
     <void property="attributes">
      <void property="text">
-      <string>-id : int</string>
-     </void>
-    </void>
-    <void property="methods">
-     <void property="text">
-      <string>+getRows() : Row[][]</string>
+      <string>-id : int
+-rows : Row[][]</string>
      </void>
     </void>
     <void property="name">
@@ -111,8 +108,8 @@ User</string>
    </object>
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
-     <double>531.0</double>
-     <double>335.0</double>
+     <double>529.0</double>
+     <double>325.0</double>
     </void>
    </object>
   </void>
@@ -120,13 +117,9 @@ User</string>
    <object id="ClassNode5" class="com.horstmann.violet.ClassNode">
     <void property="attributes">
      <void property="text">
-      <string>-id : int</string>
-     </void>
-    </void>
-    <void property="methods">
-     <void property="text">
-      <string>+getZipcode() : int
-+getNearBusinesses() : String[]</string>
+      <string>-id : int
+-zipCode : int
+-nearbyBusinesses : String[]</string>
      </void>
     </void>
     <void property="name">
@@ -137,8 +130,8 @@ User</string>
    </object>
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
-     <double>73.0</double>
-     <double>132.0</double>
+     <double>75.0</double>
+     <double>103.0</double>
     </void>
    </object>
   </void>
@@ -166,14 +159,10 @@ User</string>
    <object id="ClassNode7" class="com.horstmann.violet.ClassNode">
     <void property="attributes">
      <void property="text">
-      <string>-id : int</string>
-     </void>
-    </void>
-    <void property="methods">
-     <void property="text">
-      <string>+getItem() : Item
-+getExprDate() : GregorianCalendar
-+getAmountLeft : int</string>
+      <string>-id : int
+-item : Item
+-expirationDate : GregorianCalendar
+-remainingQuantity : int</string>
      </void>
     </void>
     <void property="name">
@@ -193,14 +182,10 @@ User</string>
    <object id="ClassNode8" class="com.horstmann.violet.ClassNode">
     <void property="attributes">
      <void property="text">
-      <string>-id : int</string>
-     </void>
-    </void>
-    <void property="methods">
-     <void property="text">
-      <string>+getName() : String
-+getFreshLength() : long
-+getPrice() : int</string>
+      <string>-id : int
+-name : String
+-price : int
+-freshLength : long</string>
      </void>
     </void>
     <void property="name">
@@ -220,21 +205,17 @@ User</string>
    <object id="ClassNode9" class="com.horstmann.violet.ClassNode">
     <void property="attributes">
      <void property="text">
-      <string>-id : int</string>
-     </void>
-    </void>
-    <void property="methods">
-     <void property="text">
-      <string>+getWhen() : GregorianCalendar
-+getWhere() : VendingMachine
-+getWho() : Customer
-+getWhat() : Item
-+getWhereRow() : Pair&lt;Integer, Integer&gt;</string>
+      <string>-id : int
+-when : GregorianCalendar
+-where : VendingMachine
+-who : Customer
+-what : Item
+-whichRow : Pair&lt;Integer, Integer&gt;</string>
      </void>
     </void>
     <void property="name">
      <void property="text">
-      <string>Transaction</string>
+      <string>TransactionString</string>
      </void>
     </void>
    </object>
