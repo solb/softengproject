@@ -23,8 +23,53 @@
    </object>
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
-     <double>22.0</double>
-     <double>24.0</double>
+     <double>17.0</double>
+     <double>258.0</double>
+    </void>
+   </object>
+  </void>
+  <void method="addNode">
+   <object class="com.horstmann.violet.ClassNode">
+    <void property="methods">
+     <void property="text">
+      <string>+&lt;u&gt;main(args : String[]) : void&lt;/u&gt;
++&lt;u&gt;loginScreen(state : CustomerLoginScreen) : void&lt;/u&gt;
++&lt;u&gt;purchaseScreen(state : CustomerPurchaseScreen) : void&lt;/u&gt;
++&lt;u&gt;cashPurchaseScreen(state : CashCustomerPurchaseScreen) : void&lt;/u&gt;</string>
+     </void>
+    </void>
+    <void property="name">
+     <void property="text">
+      <string>CustomerCLI</string>
+     </void>
+    </void>
+   </object>
+   <object class="java.awt.geom.Point2D$Double">
+    <void method="setLocation">
+     <double>19.0</double>
+     <double>19.0</double>
+    </void>
+   </object>
+  </void>
+  <void method="addNode">
+   <object class="com.horstmann.violet.ClassNode">
+    <void property="methods">
+     <void property="text">
+      <string>+&lt;u&gt;main(args : String[]) : void&lt;/u&gt;
++&lt;u&gt;pickMachine(state : RestockerMachinePickerScreen) : void&lt;/u&gt;
++&lt;u&gt;listTasks(state : RestockerTaskListScreen) : void&lt;/u&gt;</string>
+     </void>
+    </void>
+    <void property="name">
+     <void property="text">
+      <string>RestockerCLI</string>
+     </void>
+    </void>
+   </object>
+   <object class="java.awt.geom.Point2D$Double">
+    <void method="setLocation">
+     <double>20.0</double>
+     <double>139.0</double>
     </void>
    </object>
   </void>
