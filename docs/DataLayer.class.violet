@@ -5,7 +5,7 @@
    <object id="ClassNode0" class="com.horstmann.violet.ClassNode">
     <void property="attributes">
      <void property="text">
-      <string>-id : int</string>
+      <string>-userId : int</string>
      </void>
     </void>
     <void property="name">
@@ -77,7 +77,7 @@ User</string>
    <object id="ClassNode3" class="com.horstmann.violet.ClassNode">
     <void property="attributes">
      <void property="text">
-      <string>-id : int
+      <string>-machineId : int
 -active : boolean
 -currentLayout : VMLayout
 -nextLayout : VMLayout
@@ -101,7 +101,7 @@ User</string>
    <object id="ClassNode4" class="com.horstmann.violet.ClassNode">
     <void property="attributes">
      <void property="text">
-      <string>-id : int
+      <string>-layoutId : int
 -rows : Row[][]</string>
      </void>
     </void>
@@ -122,7 +122,7 @@ User</string>
    <object id="ClassNode5" class="com.horstmann.violet.ClassNode">
     <void property="attributes">
      <void property="text">
-      <string>-id : int
+      <string>-locationId : int
 -zipCode : int
 -state : String
 -nearbyBusinesses : String[]</string>
@@ -145,8 +145,8 @@ User</string>
    <object id="ClassNode6" class="com.horstmann.violet.ClassNode">
     <void property="attributes">
      <void property="text">
-      <string>-id : int
--item : Item
+      <string>-rowId : int
+-product : Item
 -expirationDate : GregorianCalendar
 -remainingQuantity : int</string>
      </void>
@@ -168,7 +168,7 @@ User</string>
    <object id="ClassNode7" class="com.horstmann.violet.ClassNode">
     <void property="attributes">
      <void property="text">
-      <string>-id : int
+      <string>-itemId : int
 -name : String
 -price : int
 -freshLength : long</string>
@@ -191,7 +191,7 @@ User</string>
    <object id="ClassNode8" class="com.horstmann.violet.ClassNode">
     <void property="attributes">
      <void property="text">
-      <string>-id : int
+      <string>-transactionId : int
 -when : GregorianCalendar
 -where : VendingMachine
 -who : Customer
