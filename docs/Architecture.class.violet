@@ -66,14 +66,14 @@
    <object id="ClassNode4" class="com.horstmann.violet.ClassNode">
     <void property="name">
      <void property="text">
-      <string>Customer Model</string>
+      <string>Customer Controller</string>
      </void>
     </void>
    </object>
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
-     <double>430.0</double>
-     <double>151.0</double>
+     <double>420.0</double>
+     <double>154.0</double>
     </void>
    </object>
   </void>
@@ -96,14 +96,14 @@
    <object id="ClassNode6" class="com.horstmann.violet.ClassNode">
     <void property="name">
      <void property="text">
-      <string>Manager Model</string>
+      <string>Manager Controller</string>
      </void>
     </void>
    </object>
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
-     <double>175.0</double>
-     <double>148.0</double>
+     <double>156.0</double>
+     <double>150.0</double>
     </void>
    </object>
   </void>
@@ -111,15 +111,14 @@
    <object id="ClassNode7" class="com.horstmann.violet.ClassNode">
     <void property="name">
      <void property="text">
-      <string>Restocker Model
-</string>
+      <string>Restocker Controller</string>
      </void>
     </void>
    </object>
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
-     <double>706.0</double>
-     <double>151.0</double>
+     <double>697.0</double>
+     <double>153.0</double>
     </void>
    </object>
   </void>
