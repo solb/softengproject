@@ -29,6 +29,12 @@ User</string>
       <string>-money : int</string>
      </void>
     </void>
+    <void property="methods">
+     <void property="text">
+      <string>+addMoney(amount : int) : void
++isCashCustomer() : bool</string>
+     </void>
+    </void>
     <void property="name">
      <void property="text">
       <string>Customer</string>
@@ -37,8 +43,8 @@ User</string>
    </object>
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
-     <double>1169.5436237804734</double>
-     <double>135.00066325510073</double>
+     <double>1152.5436237804734</double>
+     <double>144.00066325510073</double>
     </void>
    </object>
   </void>
@@ -139,26 +145,6 @@ User</string>
    <object id="ClassNode6" class="com.horstmann.violet.ClassNode">
     <void property="attributes">
      <void property="text">
-      <string>-money : int</string>
-     </void>
-    </void>
-    <void property="name">
-     <void property="text">
-      <string>CashCustomer</string>
-     </void>
-    </void>
-   </object>
-   <object class="java.awt.geom.Point2D$Double">
-    <void method="setLocation">
-     <double>1159.51763645063</double>
-     <double>238.32511306011975</double>
-    </void>
-   </object>
-  </void>
-  <void method="addNode">
-   <object id="ClassNode7" class="com.horstmann.violet.ClassNode">
-    <void property="attributes">
-     <void property="text">
       <string>-id : int
 -item : Item
 -expirationDate : GregorianCalendar
@@ -179,7 +165,7 @@ User</string>
    </object>
   </void>
   <void method="addNode">
-   <object id="ClassNode8" class="com.horstmann.violet.ClassNode">
+   <object id="ClassNode7" class="com.horstmann.violet.ClassNode">
     <void property="attributes">
      <void property="text">
       <string>-id : int
@@ -202,7 +188,7 @@ User</string>
    </object>
   </void>
   <void method="addNode">
-   <object id="ClassNode9" class="com.horstmann.violet.ClassNode">
+   <object id="ClassNode8" class="com.horstmann.violet.ClassNode">
     <void property="attributes">
      <void property="text">
       <string>-id : int
@@ -221,8 +207,8 @@ User</string>
    </object>
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
-     <double>835.4077178353511</double>
-     <double>92.35242690016324</double>
+     <double>841.4077178353511</double>
+     <double>100.35242690016324</double>
     </void>
    </object>
   </void>
@@ -294,18 +280,6 @@ User</string>
   <void method="connect">
    <object class="com.horstmann.violet.ClassRelationshipEdge">
     <void property="bentStyle">
-     <object class="com.horstmann.violet.BentStyle" field="VHV"/>
-    </void>
-    <void property="endArrowHead">
-     <object class="com.horstmann.violet.ArrowHead" field="TRIANGLE"/>
-    </void>
-   </object>
-   <object idref="ClassNode6"/>
-   <object idref="ClassNode1"/>
-  </void>
-  <void method="connect">
-   <object class="com.horstmann.violet.ClassRelationshipEdge">
-    <void property="bentStyle">
      <object class="com.horstmann.violet.BentStyle" field="HVH"/>
     </void>
     <void property="endArrowHead">
@@ -322,7 +296,7 @@ User</string>
     </void>
    </object>
    <object idref="ClassNode4"/>
-   <object idref="ClassNode7"/>
+   <object idref="ClassNode6"/>
   </void>
   <void method="connect">
    <object class="com.horstmann.violet.ClassRelationshipEdge">
@@ -342,8 +316,8 @@ User</string>
      <string>0..*</string>
     </void>
    </object>
+   <object idref="ClassNode6"/>
    <object idref="ClassNode7"/>
-   <object idref="ClassNode8"/>
   </void>
   <void method="connect">
    <object class="com.horstmann.violet.ClassRelationshipEdge">
@@ -384,8 +358,8 @@ User</string>
      <string>0..*</string>
     </void>
    </object>
-   <object idref="ClassNode9"/>
    <object idref="ClassNode8"/>
+   <object idref="ClassNode7"/>
   </void>
   <void method="connect">
    <object class="com.horstmann.violet.ClassRelationshipEdge">
@@ -405,7 +379,7 @@ User</string>
      <string>0..*</string>
     </void>
    </object>
-   <object idref="ClassNode9"/>
+   <object idref="ClassNode8"/>
    <object idref="ClassNode3"/>
   </void>
   <void method="connect">
@@ -447,7 +421,7 @@ User</string>
      <string>0..*</string>
     </void>
    </object>
-   <object idref="ClassNode9"/>
+   <object idref="ClassNode8"/>
    <object idref="ClassNode1"/>
   </void>
  </object>
