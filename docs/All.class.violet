@@ -359,7 +359,7 @@
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
      <double>1055.6784464574876</double>
-     <double>307.7266135931933</double>
+     <double>253.7266135931933</double>
     </void>
    </object>
   </void>
@@ -662,6 +662,22 @@ User</string>
     <void method="setLocation">
      <double>1476.2248588821442</double>
      <double>1763.9054444413637</double>
+    </void>
+   </object>
+  </void>
+  <void method="addNode">
+   <object class="com.horstmann.violet.NoteNode">
+    <void property="text">
+     <void property="text">
+      <string>The associative arrows from the controller layer to the model layer do not
+have multiplicities for readability&apos;s sake.</string>
+     </void>
+    </void>
+   </object>
+   <object class="java.awt.geom.Point2D$Double">
+    <void method="setLocation">
+     <double>1060.0</double>
+     <double>311.0</double>
     </void>
    </object>
   </void>
