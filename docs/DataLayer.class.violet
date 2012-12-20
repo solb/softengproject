@@ -159,8 +159,8 @@ User</string>
    </object>
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
-     <double>577.5702743654093</double>
-     <double>310.32179678462114</double>
+     <double>558.5702743654093</double>
+     <double>309.32179678462114</double>
     </void>
    </object>
   </void>
@@ -182,8 +182,8 @@ User</string>
    </object>
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
-     <double>890.0845945405326</double>
-     <double>306.88941812962463</double>
+     <double>871.0845945405326</double>
+     <double>305.88941812962463</double>
     </void>
    </object>
   </void>
@@ -192,10 +192,10 @@ User</string>
     <void property="attributes">
      <void property="text">
       <string>-transactionId : int
--when : GregorianCalendar
--where : VendingMachine
--who : Customer
--what : Item
+-timestamp : GregorianCalendar
+-machine : VendingMachine
+-customer : Customer
+-product : Item
 -whichRow : Pair&lt;Integer, Integer&gt;</string>
      </void>
     </void>
@@ -207,8 +207,8 @@ User</string>
    </object>
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
-     <double>841.4077178353511</double>
-     <double>100.35242690016324</double>
+     <double>822.4077178353511</double>
+     <double>99.35242690016324</double>
     </void>
    </object>
   </void>
