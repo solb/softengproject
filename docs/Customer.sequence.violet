@@ -53,6 +53,13 @@
         </void>
        </object>
       </void>
+      <void method="addChild">
+       <object id="ActivationBarNode5" class="com.horstmann.violet.CallNode">
+        <void property="implicitParameter">
+         <object idref="LifelineNode1"/>
+        </void>
+       </object>
+      </void>
       <void property="implicitParameter">
        <object idref="LifelineNode2"/>
       </void>
@@ -124,14 +131,7 @@
    </object>
   </void>
   <void method="addNode">
-   <object id="ActivationBarNode5" class="com.horstmann.violet.CallNode">
-    <void method="addChild">
-     <object id="ActivationBarNode6" class="com.horstmann.violet.CallNode">
-      <void property="implicitParameter">
-       <object idref="LifelineNode2"/>
-      </void>
-     </object>
-    </void>
+   <object id="ActivationBarNode6" class="com.horstmann.violet.CallNode">
     <void method="addChild">
      <object id="ActivationBarNode7" class="com.horstmann.violet.CallNode">
       <void property="implicitParameter">
@@ -146,6 +146,20 @@
       </void>
      </object>
     </void>
+    <void method="addChild">
+     <object id="ActivationBarNode9" class="com.horstmann.violet.CallNode">
+      <void method="addChild">
+       <object id="ActivationBarNode10" class="com.horstmann.violet.CallNode">
+        <void property="implicitParameter">
+         <object idref="LifelineNode1"/>
+        </void>
+       </object>
+      </void>
+      <void property="implicitParameter">
+       <object idref="LifelineNode2"/>
+      </void>
+     </object>
+    </void>
     <void property="implicitParameter">
      <object idref="LifelineNode0"/>
     </void>
@@ -153,16 +167,7 @@
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
      <double>438.0</double>
-     <double>312.0</double>
-    </void>
-   </object>
-  </void>
-  <void method="addNode">
-   <object idref="ActivationBarNode6"/>
-   <object class="java.awt.geom.Point2D$Double">
-    <void method="setLocation">
-     <double>784.0</double>
-     <double>335.0</double>
+     <double>365.0</double>
     </void>
    </object>
   </void>
@@ -181,6 +186,33 @@
     <void method="setLocation">
      <double>784.0</double>
      <double>441.0</double>
+    </void>
+   </object>
+  </void>
+  <void method="addNode">
+   <object idref="ActivationBarNode9"/>
+   <object class="java.awt.geom.Point2D$Double">
+    <void method="setLocation">
+     <double>784.0</double>
+     <double>494.0</double>
+    </void>
+   </object>
+  </void>
+  <void method="addNode">
+   <object idref="ActivationBarNode5"/>
+   <object class="java.awt.geom.Point2D$Double">
+    <void method="setLocation">
+     <double>1149.0</double>
+     <double>275.0</double>
+    </void>
+   </object>
+  </void>
+  <void method="addNode">
+   <object idref="ActivationBarNode10"/>
+   <object class="java.awt.geom.Point2D$Double">
+    <void method="setLocation">
+     <double>1149.0</double>
+     <double>517.0</double>
     </void>
    </object>
   </void>
@@ -244,8 +276,8 @@
      <string>elect to pay in cash</string>
     </void>
    </object>
-   <object idref="ActivationBarNode5"/>
    <object idref="ActivationBarNode6"/>
+   <object idref="ActivationBarNode7"/>
   </void>
   <void method="connect">
    <object class="com.horstmann.violet.ReturnEdge">
@@ -253,8 +285,8 @@
      <string>allow to insert cash or select item</string>
     </void>
    </object>
+   <object idref="ActivationBarNode7"/>
    <object idref="ActivationBarNode6"/>
-   <object idref="ActivationBarNode5"/>
   </void>
   <void method="connect">
    <object class="com.horstmann.violet.CallEdge">
@@ -262,8 +294,8 @@
      <string>insert cash</string>
     </void>
    </object>
-   <object idref="ActivationBarNode5"/>
-   <object idref="ActivationBarNode7"/>
+   <object idref="ActivationBarNode6"/>
+   <object idref="ActivationBarNode8"/>
   </void>
   <void method="connect">
    <object class="com.horstmann.violet.ReturnEdge">
@@ -271,8 +303,8 @@
      <string>report current amount</string>
     </void>
    </object>
-   <object idref="ActivationBarNode7"/>
-   <object idref="ActivationBarNode5"/>
+   <object idref="ActivationBarNode8"/>
+   <object idref="ActivationBarNode6"/>
   </void>
   <void method="connect">
    <object class="com.horstmann.violet.CallEdge">
@@ -280,8 +312,26 @@
      <string>give item selection</string>
     </void>
    </object>
+   <object idref="ActivationBarNode6"/>
+   <object idref="ActivationBarNode9"/>
+  </void>
+  <void method="connect">
+   <object class="com.horstmann.violet.CallEdge">
+    <void property="middleLabel">
+     <string>decrement machine&apos;s remaining inventory</string>
+    </void>
+   </object>
+   <object idref="ActivationBarNode3"/>
    <object idref="ActivationBarNode5"/>
-   <object idref="ActivationBarNode8"/>
+  </void>
+  <void method="connect">
+   <object class="com.horstmann.violet.CallEdge">
+    <void property="middleLabel">
+     <string>decrement machine&apos;s remaining inventory</string>
+    </void>
+   </object>
+   <object idref="ActivationBarNode9"/>
+   <object idref="ActivationBarNode10"/>
   </void>
   <void method="connect">
    <object class="com.horstmann.violet.ReturnEdge">
@@ -289,8 +339,8 @@
      <string>report change amount</string>
     </void>
    </object>
-   <object idref="ActivationBarNode8"/>
-   <object idref="ActivationBarNode5"/>
+   <object idref="ActivationBarNode9"/>
+   <object idref="ActivationBarNode6"/>
   </void>
  </object>
 </java>
