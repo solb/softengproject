@@ -23,8 +23,8 @@
    </object>
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
-     <double>17.0</double>
-     <double>258.0</double>
+     <double>896.0</double>
+     <double>21.0</double>
     </void>
    </object>
   </void>
@@ -34,6 +34,9 @@
      <void property="text">
       <string>+&lt;u&gt;main(args : String[]) : void&lt;/u&gt;
 +&lt;u&gt;loginScreen(state : CustomerLoginScreen) : void&lt;/u&gt;
++&lt;u&gt;loggedInSuccessfully(state : CustomerPurchaseScreen) : void&lt;/u&gt;
++&lt;u&gt;loggedInSuccessfully(state : CashCustomerPurchaseScreen) : void&lt;/u&gt;
++&lt;u&gt;insertMoney(state : CashCustomerPurchaseScreen) : void&lt;/u&gt;
 +&lt;u&gt;purchaseScreen(state : CustomerPurchaseScreen) : void&lt;/u&gt;
 +&lt;u&gt;cashPurchaseScreen(state : CashCustomerPurchaseScreen) : void&lt;/u&gt;</string>
      </void>
@@ -68,8 +71,8 @@
    </object>
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
+     <double>482.0</double>
      <double>20.0</double>
-     <double>139.0</double>
     </void>
    </object>
   </void>
