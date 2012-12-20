@@ -312,7 +312,10 @@ User</string>
      <object class="com.horstmann.violet.ArrowHead" field="V"/>
     </void>
     <void property="endLabel">
-     <string>1..</string>
+     <string>*</string>
+    </void>
+    <void property="startArrowHead">
+     <object class="com.horstmann.violet.ArrowHead" field="V"/>
     </void>
     <void property="startLabel">
      <string>1</string>
@@ -332,8 +335,11 @@ User</string>
     <void property="endLabel">
      <string>1</string>
     </void>
+    <void property="startArrowHead">
+     <object class="com.horstmann.violet.ArrowHead" field="V"/>
+    </void>
     <void property="startLabel">
-     <string>1</string>
+     <string>0..*</string>
     </void>
    </object>
    <object idref="ClassNode7"/>
@@ -348,7 +354,10 @@ User</string>
      <object class="com.horstmann.violet.ArrowHead" field="V"/>
     </void>
     <void property="endLabel">
-     <string>2</string>
+     <string>*</string>
+    </void>
+    <void property="startArrowHead">
+     <object class="com.horstmann.violet.ArrowHead" field="V"/>
     </void>
     <void property="startLabel">
      <string>1</string>
@@ -368,8 +377,11 @@ User</string>
     <void property="endLabel">
      <string>1</string>
     </void>
+    <void property="startArrowHead">
+     <object class="com.horstmann.violet.ArrowHead" field="V"/>
+    </void>
     <void property="startLabel">
-     <string>1</string>
+     <string>0..*</string>
     </void>
    </object>
    <object idref="ClassNode9"/>
@@ -386,8 +398,11 @@ User</string>
     <void property="endLabel">
      <string>1</string>
     </void>
+    <void property="startArrowHead">
+     <object class="com.horstmann.violet.ArrowHead" field="V"/>
+    </void>
     <void property="startLabel">
-     <string>1</string>
+     <string>0..*</string>
     </void>
    </object>
    <object idref="ClassNode9"/>
@@ -404,8 +419,11 @@ User</string>
     <void property="endLabel">
      <string>1</string>
     </void>
+    <void property="startArrowHead">
+     <object class="com.horstmann.violet.ArrowHead" field="V"/>
+    </void>
     <void property="startLabel">
-     <string>1</string>
+     <string>0..*</string>
     </void>
    </object>
    <object idref="ClassNode3"/>
@@ -422,8 +440,11 @@ User</string>
     <void property="endLabel">
      <string>1</string>
     </void>
+    <void property="startArrowHead">
+     <object class="com.horstmann.violet.ArrowHead" field="V"/>
+    </void>
     <void property="startLabel">
-     <string>1</string>
+     <string>0..*</string>
     </void>
    </object>
    <object idref="ClassNode9"/>
