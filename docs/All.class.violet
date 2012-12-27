@@ -486,29 +486,36 @@
    <object class="com.horstmann.violet.ClassNode">
     <void property="attributes">
      <void property="text">
-      <string>- &lt;u&gt;db : Connection&lt;/u&gt;
-- &lt;u&gt;dbLocation : String&lt;/u&gt;</string>
+      <string>+&lt;u&gt;DEFAULT_DB_LOCATION : String&lt;/u&gt;
+- &lt;u&gt;DB_DRIVER : String&lt;/u&gt;
+- &lt;u&gt;DRIVER_CLASS : String&lt;/u&gt;
+- &lt;u&gt;dbLocation : String&lt;/u&gt;
+- &lt;u&gt;instance : DatabaseLayer&lt;/u&gt;
+- db : Connection</string>
      </void>
     </void>
     <void property="methods">
      <void property="text">
-      <string>+&lt;u&gt;getItemById(id : int) : Ite&lt;/u&gt;m
-+&lt;u&gt;getItemsAll() : Collection&lt;Item&gt;&lt;/u&gt;
-+&lt;u&gt;updateOrCreateItem(item : Item) : void&lt;/u&gt;
-+&lt;u&gt;getVendingMachineById(id : int) : VendingMachine&lt;/u&gt;
-+&lt;u&gt;getVendingMachinesAll() : Collection&lt;VendingMachine&gt;&lt;/u&gt;
-+&lt;u&gt;getVendingMachinesByZip(zip : int) : Collection&lt;VendingMachine&gt;&lt;/u&gt;
-+&lt;u&gt;getVendingMachinesByState(state : String): Collection&lt;VendingMachine&gt;&lt;/u&gt;
-+&lt;u&gt;updateOrCreateVendingMachine(vm : VendingMachine) : void&lt;/u&gt;
-+&lt;u&gt;getCustomerById(id : int) : Customer&lt;/u&gt;
-+&lt;u&gt;updateOrCreateCustomer(customer : Customer) : void&lt;/u&gt;
-+&lt;u&gt;getManagerById(id : int) : Manager&lt;/u&gt;
-+&lt;u&gt;updateOrCreateManager(manager : Manager) : void&lt;/u&gt;
-+&lt;u&gt;getTransactionById(id : int) : Transaction&lt;/u&gt;
-+&lt;u&gt;getTransactionsByVendingMachine(vm : VendingMachine) : Collection&lt;Transaction&gt;&lt;/u&gt;
-+&lt;u&gt;getTransactionByCustomer(customer : Customer) : Collection&lt;Transaction&gt;&lt;/u&gt;
-+&lt;u&gt;getTransactionsAll() : Collection&lt;Transaction&gt;&lt;/u&gt;
-+&lt;u&gt;updateOrCreateTransaction(transaction : Transaction) : void&lt;/u&gt;</string>
+      <string>+&lt;u&gt;setDatabaseLocation(path : String) : boolean&lt;/u&gt;
++&lt;u&gt;getInstance() : DatabaseLayer&lt;/u&gt;
+- DatabaseLayer()
++getItemById(id : int) : Item&lt;/u&gt;
++getItemsAll() : Collection&lt;Item&gt;&lt;/u&gt;
++updateOrCreateItem(item : Item) : void&lt;/u&gt;
++getVendingMachineById(id : int) : VendingMachine&lt;/u&gt;
++getVendingMachinesAll() : Collection&lt;VendingMachine&gt;&lt;/u&gt;
++getVendingMachinesByZip(zip : int) : Collection&lt;VendingMachine&gt;&lt;/u&gt;
++getVendingMachinesByState(state : String): Collection&lt;VendingMachine&gt;&lt;/u&gt;
++updateOrCreateVendingMachine(vm : VendingMachine) : void&lt;/u&gt;
++getCustomerById(id : int) : Customer&lt;/u&gt;
++updateOrCreateCustomer(customer : Customer) : void&lt;/u&gt;
++getManagerById(id : int) : Manager&lt;/u&gt;
++updateOrCreateManager(manager : Manager) : void&lt;/u&gt;
++getTransactionById(id : int) : Transaction&lt;/u&gt;
++getTransactionsByVendingMachine(vm : VendingMachine) : Collection&lt;Transaction&gt;&lt;/u&gt;
++getTransactionByCustomer(customer : Customer) : Collection&lt;Transaction&gt;&lt;/u&gt;
++getTransactionsAll() : Collection&lt;Transaction&gt;&lt;/u&gt;
++updateOrCreateTransaction(transaction : Transaction) : void&lt;/u&gt;</string>
      </void>
     </void>
     <void property="name">
