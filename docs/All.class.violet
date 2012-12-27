@@ -515,7 +515,8 @@
 +getTransactionsByVendingMachine(vm : VendingMachine) : Collection&lt;Transaction&gt;&lt;/u&gt;
 +getTransactionByCustomer(customer : Customer) : Collection&lt;Transaction&gt;&lt;/u&gt;
 +getTransactionsAll() : Collection&lt;Transaction&gt;&lt;/u&gt;
-+updateOrCreateTransaction(transaction : Transaction) : void&lt;/u&gt;</string>
++updateOrCreateTransaction(transaction : Transaction) : void&lt;/u&gt;
++initializeDatabase() : void</string>
      </void>
     </void>
     <void property="name">
