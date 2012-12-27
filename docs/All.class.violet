@@ -497,10 +497,11 @@
 +&lt;u&gt;updateOrCreateItem(item : Item) : void&lt;/u&gt;
 +&lt;u&gt;getVendingMachineById(id : int) : VendingMachine&lt;/u&gt;
 +&lt;u&gt;getVendingMachinesAll() : Collection&lt;VendingMachine&gt;&lt;/u&gt;
-+&lt;u&gt;getVendingMachinesByLocation : Collection&lt;VendingMachine&gt;&lt;/u&gt;
++&lt;u&gt;getVendingMachinesByZip(zip : int) : Collection&lt;VendingMachine&gt;&lt;/u&gt;
++&lt;u&gt;getVendingMachinesByState(state : String): Collection&lt;VendingMachine&gt;&lt;/u&gt;
 +&lt;u&gt;updateOrCreateVendingMachine(vm : VendingMachine) : void&lt;/u&gt;
 +&lt;u&gt;getCustomerById(id : int) : Customer&lt;/u&gt;
-+&lt;u&gt;updateOrCreateCustomer() : void&lt;/u&gt;
++&lt;u&gt;updateOrCreateCustomer(customer : Customer) : void&lt;/u&gt;
 +&lt;u&gt;getManagerById(id : int) : Manager&lt;/u&gt;
 +&lt;u&gt;updateOrCreateManager(manager : Manager) : void&lt;/u&gt;
 +&lt;u&gt;getTransactionById(id : int) : Transaction&lt;/u&gt;
