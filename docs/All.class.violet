@@ -501,9 +501,9 @@
       <string>+&lt;u&gt;setDatabaseLocation(path : String) : boolean&lt;/u&gt;
 +&lt;u&gt;getInstance() : DatabaseLayer&lt;/u&gt;
 - DatabaseLayer()
-+getItemById(id : int) : Item&lt;/u&gt;
-+getItemsAll() : Collection&lt;Item&gt;&lt;/u&gt;
-+updateOrCreateItem(item : Item) : void&lt;/u&gt;
++getFoodItemById(id : int) : FoodItem&lt;/u&gt;
++getFoodItemsAll() : Collection&lt;FoodItem&gt;&lt;/u&gt;
++updateOrCreateFoodItem(item : FoodItem) : void&lt;/u&gt;
 +getVendingMachineById(id : int) : VendingMachine&lt;/u&gt;
 +getVendingMachinesAll() : Collection&lt;VendingMachine&gt;&lt;/u&gt;
 +getVendingMachinesByZip(zip : int) : Collection&lt;VendingMachine&gt;&lt;/u&gt;
