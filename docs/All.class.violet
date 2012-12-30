@@ -504,6 +504,10 @@
 +getFoodItemById(id : int) : FoodItem&lt;/u&gt;
 +getFoodItemsAll() : Collection&lt;FoodItem&gt;&lt;/u&gt;
 +updateOrCreateFoodItem(item : FoodItem) : void&lt;/u&gt;
+-getVMLayoutById(id : int) : VMLayout
+-updateOrCreateVMLayout(layout : VMLayout) : void
+-getLocationById(id : int) : Location
+-updateOrCreateLocation(location : Location) : void
 +getVendingMachineById(id : int) : VendingMachine&lt;/u&gt;
 +getVendingMachinesAll() : Collection&lt;VendingMachine&gt;&lt;/u&gt;
 +getVendingMachinesByZip(zip : int) : Collection&lt;VendingMachine&gt;&lt;/u&gt;
