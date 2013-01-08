@@ -85,8 +85,8 @@
     </void>
     <void property="methods">
      <void property="text">
-      <string>+listRows() : Item[][]
-+queueRowChange(row : Point&lt;Integer,Integer&gt;, it : Item) : void
+      <string>+listRows() : FoodItem[][]
++queueRowChange(row : Point&lt;Integer,Integer&gt;, it : FoodItem) : void
 +commitRowChanges() : boolean
 +exit() : void</string>
      </void>
@@ -247,12 +247,12 @@
    <object id="ClassNode5" class="com.horstmann.violet.ClassNode">
     <void property="attributes">
      <void property="text">
-      <string>-stockpile : Collection&lt;Item&gt;</string>
+      <string>-stockpile : Collection&lt;FoodItem&gt;</string>
      </void>
     </void>
     <void property="methods">
      <void property="text">
-      <string>+listItems() : Collection&lt;Item&gt;
+      <string>+listItems() : Collection&lt;FoodItem&gt;
 +addItem(name : String, price : int, freshLength : long) : void
 +changeItemName(id : int, name : String) : boolean
 +changeItemPrice(id : int, price : int) : boolean
