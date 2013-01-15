@@ -527,7 +527,11 @@
 +getManagersAll() : Collection&lt;Manager&gt;
 +getTransactionsByState( String state ) : Collection&lt;Transaction&gt;
 +getTransactionsByZipCode( int zipCode ) : Collection&lt;Transaction&gt;
-+nuke() : void</string> 
++nuke() : void
+-isCustomerValid(cust : Customer) : boolean
+-isFoodItemValid(item : FoodItem) : boolean
+-isVendingMachineValid(vm : VendingMachine) : boolean
+-updateOrCreateRow(row : Row, x : int, y : int, parentLayoutId : int) : void</string> 
      </void> 
     </void> 
     <void property="name"> 
