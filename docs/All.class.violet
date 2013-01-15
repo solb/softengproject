@@ -144,13 +144,16 @@
    <object class="com.horstmann.violet.ClassNode" id="ClassNode0">
     <void property="attributes">
      <void property="text">
-      <string>-machine : VendingMachine</string>
+      <string>&lt;u&gt;-db : DatabaseLayer&lt;/u&gt;
+-machines : ArrayList&lt;VendingMachine&gt;</string>
      </void>
     </void>
     <void property="methods">
      <void property="text">
       <string>+listRows() : FoodItem[][]
-+queueRowChange(row : Point&lt;Integer,Integer&gt;, it : FoodItem) : void
++listMachines() : ArrayList&lt;VendingMachine&gt;
++listItems() : ArrayList&lt;FoodItem&gt;
++queueRowChange(row : Point&lt;Integer,Integer&gt;, it : FoodItem) : int
 +commitRowChanges() : boolean</string>
      </void>
     </void>
@@ -187,13 +190,16 @@
    <object class="com.horstmann.violet.ClassNode" id="ClassNode1">
     <void property="attributes">
      <void property="text">
-      <string>-vm : VendingMachine</string>
+      <string>&lt;u&gt;-db : DatabaseLayer&lt;/u&gt;
+-vm : VendingMachine</string>
      </void>
     </void>
     <void property="methods">
      <void property="text">
-      <string>+tryLogin(id : int) : void
-+cashLogin() : void</string>
+      <string>+tryLogin(id : int) : CustomerPurchaseScreen
++cashLogin() : CashCustomerPurchaseScreen
++listActiveMachines() : ArrayList&lt;VendingMachine&gt;
+&lt;u&gt;+buildInstance(id : int) : CustomerLoginScreen&lt;/u&gt;</string>
      </void>
     </void>
     <void property="name">
@@ -229,17 +235,18 @@
    <object class="com.horstmann.violet.ClassNode" id="ClassNode2">
     <void property="attributes">
      <void property="text">
-      <string>-transactions : Collection&lt;Transaction&gt;
+      <string>&lt;u&gt;-db : DatabaseLayer&lt;/u&gt;
 -machines : Collection&lt;VendingMachine&gt;
 -locations : Collection&lt;Location&gt;</string>
      </void>
     </void>
     <void property="methods">
      <void property="text">
-      <string>+listMachines() : Collection&lt;VendingMachine&gt;
-+listMachineSales(machine : VendingMachine) : Collection&lt;Transaction&gt;
-+listLocations() : Collection&lt;Location&gt;
-+listLocationSales(place : Location) : Collection&lt;Transaction&gt;</string>
+      <string>+listMachines() : ArrayList&lt;VendingMachine&gt;
++listMachineSales(machine : VendingMachine) : ArrayList&lt;Transaction&gt;
++listLocations() : ArrayList&lt;Location&gt;
++listLocationSales(place : Location) : ArrayList&lt;Transaction&gt;
++listSalesAll() : ArrayList&lt;Transaction&gt;</string>
      </void>
     </void>
     <void property="name">
@@ -275,17 +282,22 @@
    <object class="com.horstmann.violet.ClassNode" id="ClassNode3">
     <void property="attributes">
      <void property="text">
-      <string>-storefronts : Collection&lt;VendingMachine&gt;</string>
+      <string>&lt;u&gt;-db : DatabaseLayer&lt;/u&gt;
+-storefronts : ArrayList&lt;VendingMachine&gt;</string>
      </void>
     </void>
     <void property="methods">
      <void property="text">
       <string>+listMachinesAll() : Collection&lt;VendingMachine&gt;
-+listMachinesByLocation() : Collection&lt;VendingMachine&gt;
-+addMachine(location : Location) : void
-+deactivateMachine(id : int) : void
-+reactivateMachine(id : int) : void
-+changeMachineLocation(id : int, location : Location) : boolean</string>
++listMachinessAll() : ArrayList&lt;VendingMachine&gt;
++listMachinesByLocation(loc : Location) : ArrayList&lt;VendingMachine&gt;
++listDeactiveMachines() : ArrayList&lt;VendingMachine&gt;
++listActiveMachines() : ArrayList&lt;VendingMachine&gt;
++changeMachineStockingInterval(vm : VendingMachine, interval : int) : int
++addMachine(zipCode : int, state : String, nearbyBusinesses : String[], interval : int, layout : VMLayout) : int
++deactivateMachine(vm : VendingMachine) : boolean
++reactivateMachine(vm : VendingMachine) : boolean
++changeMachineLocation(vm : VendingMachine, zipCode : int, state : String, nearbyBusinesses : String[]) : boolean</string>
      </void>
     </void>
     <void property="name">
@@ -319,6 +331,11 @@
   </void>
   <void method="addNode">
    <object class="com.horstmann.violet.ClassNode">
+    <void property="attributes">
+     <void property="text">
+      <string>&lt;u&gt;-db : DatabaseLayer&lt;/u&gt;</string>
+     </void>
+    </void>
     <void property="methods">
      <void property="text">
       <string>+tryLogin(id : int, password : String) : ManagerHomeScreen</string>
@@ -357,17 +374,18 @@
    <object class="com.horstmann.violet.ClassNode" id="ClassNode4">
     <void property="attributes">
      <void property="text">
-      <string>-customers : Collection&lt;Customer&gt;
--managers : Collection&lt;Manager&gt;</string>
+      <string>&lt;u&gt;-db : DatabaseLayer&lt;/u&gt;
+-customers : ArrayList&lt;Customer&gt;
+-managers : ArrayList&lt;Manager&gt;</string>
      </void>
     </void>
     <void property="methods">
      <void property="text">
-      <string>+listCustomers() : Collection&lt;Customer&gt;
-+listManagers() : Collection&lt;Manager&gt;
-+addCustomer(initialBalance : int) : void
-+addManager(startingPassword : String) : void
-+changePassword(managerId : int, newPassword : String) : void</string>
+      <string>+listCustomers() : ArrayList&lt;Customer&gt;
++listManagers() : ArrayList&lt;Manager&gt;
++addCustomer(name : String, initialBalance : int) : int
++addManager(name : String, startingPassword : String) : int
++changePassword(manny : Manager, newPassword : String) : boolean</string>
      </void>
     </void>
     <void property="name">
@@ -403,16 +421,19 @@
    <object class="com.horstmann.violet.ClassNode" id="ClassNode5">
     <void property="attributes">
      <void property="text">
-      <string>-stockpile : Collection&lt;FoodItem&gt;</string>
+      <string>&lt;u&gt;+FAILURE_KEY : int&lt;/u&gt;
+&lt;u&gt;-db : DatabaseLayer&lt;/u&gt;
+-stockpile : ArrayList&lt;FoodItem&gt;</string>
      </void>
     </void>
     <void property="methods">
      <void property="text">
-      <string>+listItems() : Collection&lt;FoodItem&gt;
-+addItem(name : String, price : int, freshLength : long) : void
-+changeItemName(id : int, name : String) : boolean
-+changeItemPrice(id : int, price : int) : boolean
-+changeItemFreshLength(id : int, freshLength : long) : boolean</string>
+      <string>+listItems() : ArrayList&lt;FoodItem&gt;
++addItem(name : String, price : int, freshLength : long) : int
++changeItemStatus(item : FoodItem, val : boolean) : boolean
++changeItemName(item : FoodItem, name : String) : boolean
++changeItemPrice(item : FoodItem, price : int) : boolean
++changeItemFreshLength(item : FoodItem, freshLength : long) : boolean</string>
      </void>
     </void>
     <void property="name">
@@ -446,9 +467,15 @@
   </void>
   <void method="addNode">
    <object class="com.horstmann.violet.ClassNode">
+    <void property="attributes">
+     <void property="text">
+      <string>&lt;u&gt;-db : DatabaseLayer&lt;/u&gt;</string>
+     </void>
+    </void>
     <void property="methods">
      <void property="text">
-      <string>+tryMachine(id : int) : RestockerTaskListScreen</string>
+      <string>+tryMachine(id : int) : RestockerTaskListScreen
+&lt;u&gt;+listActiveMachines() : ArrayList&lt;VendingMachine&gt;&lt;/u&gt;</string>
      </void>
     </void>
     <void property="name">
@@ -484,14 +511,15 @@
    <object class="com.horstmann.violet.ClassNode" id="ClassNode6">
     <void property="attributes">
      <void property="text">
-      <string>-user : Customer
+      <string>&lt;u&gt;-db : DatabaseLayer&lt;/u&gt;
+-user : Customer
 -machine : VendingMachine</string>
      </void>
     </void>
     <void property="methods">
      <void property="text">
-      <string>+listLayout() : Item[][]
-+tryPurchase(product : Pair&lt;Integer, Integer&gt;) : boolean
+      <string>+listLayout() : FoodItem[][]
++tryPurchase(product : Pair&lt;Integer, Integer&gt;) : String
 +getBalance() : int
 +getUser() : Customer</string>
      </void>
@@ -529,7 +557,8 @@
    <object class="com.horstmann.violet.ClassNode" id="ClassNode7">
     <void property="attributes">
      <void property="text">
-      <string>-vm : VendingMachine</string>
+      <string>&lt;u&gt;-db : DatabaseLayer&lt;/u&gt;
+-vm : VendingMachine</string>
      </void>
     </void>
     <void property="methods">
@@ -602,7 +631,7 @@
    <object class="com.horstmann.violet.ClassNode" id="ClassNode8">
     <void property="methods">
      <void property="text">
-      <string>+addCash(cash : int) : void</string>
+      <string>+addCash(cash : int) : boolean</string>
      </void>
     </void>
     <void property="name">
@@ -638,17 +667,18 @@
    <object class="com.horstmann.violet.ClassNode">
     <void property="attributes">
      <void property="text">
-      <string>-manny : Manager</string>
+      <string>-manny : Manager
+&lt;u&gt;-db : DatabaseLayer&lt;/u&gt;</string>
      </void>
     </void>
     <void property="methods">
      <void property="text">
-      <string>+viewStats() : ManagerReportStatsScreen
-+alterLayout(id : int) : ManagerAlterLayoutScreen
+      <string>+displayVendingMachines() : ArrayList&lt;VendingMachine&gt;
++viewStats() : ManagerReportStatsScreen
++alterLayout() : ManagerAlterLayoutScreen
 +manageItems() : ManagerStockedItemsScreen
 +manageMachines() : ManagerMachineManagementScreen
-+manageUsers() : ManagerUserAccountsScreen
-+logout() : void</string>
++manageUsers() : ManagerUserAccountsScreen</string>
      </void>
     </void>
     <void property="name">
