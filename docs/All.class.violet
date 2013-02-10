@@ -18,8 +18,8 @@
    </object>
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
-     <double>24.0</double>
-     <double>137.0</double>
+     <double>11.0</double>
+     <double>138.0</double>
     </void>
    </object>
   </void>
@@ -70,10 +70,14 @@
 -&lt;u&gt;manageManagers(screen : ManagerUserAccountsScreen) : void&lt;/u&gt;
 -&lt;u&gt;managerChooser(managers : ArrayList&lt;Manager&gt;) : Manager&lt;/u&gt;
 
+-&lt;u&gt;customerChooser(customers : ArrayList&lt;Managers&gt;) : Customer&lt;/u?]&gt;
 -&lt;u&gt;manageUsers(screen : ManagerUserAccountsScreen) : void&lt;/u&gt;
 -&lt;u&gt;preAlterLayout(screen : ManagerHomeScreen) : void&lt;/u&gt;
 -&lt;u&gt;printRow(row : FoodItem) : void&lt;/u&gt;
 -&lt;u&gt;reactivateMachine(screen : ManagerMachineManagementScreen) : void&lt;/u&gt;
+-&lt;u&gt;viewStatsMachine(screen : ManagerReportStatsScreen) : void&lt;/u&gt;
+-&lt;u&gt;viewStatsCustomer(screen : ManagerReportStatsScreen) : void&lt;/u&gt;
+-&lt;u&gt;viewStatsProduct(screen : ManagerReportStatsScreen) : void&lt;/u&gt;
 -&lt;u&gt;viewStats(screen : ManagerReportStatsScreen) : void&lt;/u&gt;
 -&lt;u&gt;viewStatsAll(screen : ManagerReportStatsScreen) : void&lt;/u&gt;
 -&lt;u&gt;vmChooser(machines : ArrayList&lt;VendingMachine&gt;) : VendingMachine&lt;/u&gt;</string>
@@ -87,8 +91,8 @@
    </object>
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
-     <double>578.0</double>
-     <double>20.0</double>
+     <double>564.0</double>
+     <double>3.0</double>
     </void>
    </object>
   </void>
@@ -117,8 +121,8 @@
    </object>
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
-     <double>1486.050793508626</double>
-     <double>852.7320483338651</double>
+     <double>1754.8116014992406</double>
+     <double>900.300332933974</double>
     </void>
    </object>
   </void>
@@ -146,8 +150,8 @@
    </object>
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
-     <double>46.0</double>
-     <double>472.0</double>
+     <double>41.00000000000011</double>
+     <double>329.0</double>
     </void>
    </object>
   </void>
@@ -162,7 +166,9 @@
     </void>
     <void property="methods">
      <void property="text">
-      <string>+listMachines() : ArrayList&lt;VendingMachine&gt;
+      <string>+listCustomers() : ArrayList&lt;Customer&gt;
++listCustomerSales() : ArrayList&lt;Transaction&gt;
++listMachines() : ArrayList&lt;VendingMachine&gt;
 +listMachineSales(machine : VendingMachine) : ArrayList&lt;Transaction&gt;
 +listLocations() : ArrayList&lt;Location&gt;
 +listLocationSales(place : Location) : ArrayList&lt;Transaction&gt;
@@ -177,8 +183,8 @@
    </object>
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
-     <double>1487.2400006236292</double>
-     <double>644.8946048639245</double>
+     <double>1645.7289967240101</double>
+     <double>660.5161906339191</double>
     </void>
    </object>
   </void>
@@ -192,8 +198,7 @@
     </void>
     <void property="methods">
      <void property="text">
-      <string>+listMachinesAll() : Collection&lt;VendingMachine&gt;
-+listMachinessAll() : ArrayList&lt;VendingMachine&gt;
+      <string>+listMachinesAll() : ArrayList&lt;VendingMachine&gt;
 +listMachinesByLocation(loc : Location) : ArrayList&lt;VendingMachine&gt;
 +listDeactiveMachines() : ArrayList&lt;VendingMachine&gt;
 +listActiveMachines() : ArrayList&lt;VendingMachine&gt;
@@ -212,8 +217,8 @@
    </object>
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
-     <double>1055.240000623629</double>
-     <double>1194.894604863925</double>
+     <double>1079.0241429236833</double>
+     <double>1064.0818222136256</double>
     </void>
    </object>
   </void>
@@ -237,8 +242,8 @@
    </object>
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
-     <double>1493.9536136691286</double>
-     <double>560.9426871099329</double>
+     <double>1578.9536136691286</double>
+     <double>559.9426871099329</double>
     </void>
    </object>
   </void>
@@ -268,8 +273,8 @@
    </object>
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
-     <double>1064.5371365886044</double>
-     <double>1404.434912368889</double>
+     <double>1071.6723792786208</double>
+     <double>1290.2710293286277</double>
     </void>
    </object>
   </void>
@@ -286,6 +291,7 @@
      <void property="text">
       <string>+listItems() : ArrayList&lt;FoodItem&gt;
 +addItem(name : String, price : int, freshLength : long) : int
++addItem(name : String, price : int, freshLength : long, activated : boolean) : int
 +changeItemStatus(item : FoodItem, val : boolean) : boolean
 +changeItemName(item : FoodItem, name : String) : boolean
 +changeItemPrice(item : FoodItem, price : int) : boolean
@@ -300,8 +306,8 @@
    </object>
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
-     <double>1088.2939650486155</double>
-     <double>1012.7866760139518</double>
+     <double>1108.321278888659</double>
+     <double>775.4589099334295</double>
     </void>
    </object>
   </void>
@@ -326,8 +332,8 @@
    </object>
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
-     <double>51.0</double>
-     <double>384.0</double>
+     <double>458.35110038996197</double>
+     <double>493.26650584942854</double>
     </void>
    </object>
   </void>
@@ -345,6 +351,9 @@
       <string>+listLayout() : FoodItem[][]
 +tryPurchase(product : Pair&lt;Integer, Integer&gt;) : String
 +getBalance() : int
++getFrequentlyBoughtItems() : ArrayList&lt;FoodItem&gt;
++getUserName() : String
++tryPurchase(item : FoodItem) : String
 +getUser() : Customer</string>
      </void>
     </void>
@@ -356,8 +365,8 @@
    </object>
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
-     <double>525.0</double>
-     <double>561.0</double>
+     <double>33.0</double>
+     <double>492.0</double>
     </void>
    </object>
   </void>
@@ -371,8 +380,12 @@
     </void>
     <void property="methods">
      <void property="text">
-      <string>+assembleStockingList() : String[]
-+completeStocking() : void</string>
+      <string>&amp;minus assembleStockingList() : void
++completeStocking() : boolean
+&amp;minus checkRows() : void
++getInstructions() : HashMap&lt;Integer, Pair&lt;String, Boolean&gt;&gt;
++removeInstruction( id : int ) : boolean
+</string>
      </void>
     </void>
     <void property="name">
@@ -383,8 +396,8 @@
    </object>
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
-     <double>50.18151396608914</double>
-     <double>601.1339045592206</double>
+     <double>499.1815139660889</double>
+     <double>587.1339045592206</double>
     </void>
    </object>
   </void>
@@ -403,8 +416,8 @@
    </object>
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
-     <double>574.4072909660275</double>
-     <double>727.7731075423886</double>
+     <double>460.4658981767185</double>
+     <double>838.6924925324595</double>
     </void>
    </object>
   </void>
@@ -419,6 +432,7 @@
     <void property="methods">
      <void property="text">
       <string>+displayVendingMachines() : ArrayList&lt;VendingMachine&gt;
++getUserName() : String
 +viewStats() : ManagerReportStatsScreen
 +alterLayout() : ManagerAlterLayoutScreen
 +manageItems() : ManagerStockedItemsScreen
@@ -434,8 +448,8 @@
    </object>
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
-     <double>1489.0381280166466</double>
-     <double>386.27896369517254</double>
+     <double>1558.0381280166466</double>
+     <double>379.27896369517254</double>
     </void>
    </object>
   </void>
@@ -465,8 +479,8 @@
    </object>
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
-     <double>761.088952937022</double>
-     <double>1719.257208086426</double>
+     <double>761.0889529370221</double>
+     <double>1219.7902197852832</double>
     </void>
    </object>
   </void>
@@ -495,8 +509,8 @@
    </object>
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
-     <double>-0.994978348410541</double>
-     <double>1729.2265779708796</double>
+     <double>6.311306363989786</double>
+     <double>1318.5922705270884</double>
     </void>
    </object>
   </void>
@@ -514,41 +528,43 @@
     </void>
     <void property="methods">
      <void property="text">
-      <string>+&lt;u&gt;setDatabaseLocation(path : String) : boolean&lt;/u&gt;
-+&lt;u&gt;getInstance() : DatabaseLayer&lt;/u&gt;
+      <string>+&lt;u&gt;getInstance() : DatabaseLayer&lt;/u&gt;
++&lt;u&gt;setDatabaseLocation(path : String) : boolean&lt;/u&gt;
 - DatabaseLayer()
-+getFoodItemById(id : int) : FoodItem&lt;/u&gt;
-+getFoodItemsAll() : Collection&lt;FoodItem&gt;&lt;/u&gt;
-+updateOrCreateFoodItem(item : FoodItem) : void&lt;/u&gt;
--getVMLayoutById(id : int) : VMLayout
--updateOrCreateVMLayout(layout : VMLayout) : void
 -getLocationById(id : int) : Location
--updateOrCreateLocation(location : Location) : void
-+getVendingMachineById(id : int) : VendingMachine&lt;/u&gt;
-+getVendingMachinesAll() : Collection&lt;VendingMachine&gt;&lt;/u&gt;
-+getVendingMachinesByZip(zip : int) : Collection&lt;VendingMachine&gt;&lt;/u&gt;
-+getVendingMachinesByState(state : String): Collection&lt;VendingMachine&gt;&lt;/u&gt;
-+updateOrCreateVendingMachine(vm : VendingMachine) : void&lt;/u&gt;
-+getCustomerById(id : int) : Customer&lt;/u&gt;
-+updateOrCreateCustomer(customer : Customer) : void&lt;/u&gt;
-+getManagerById(id : int) : Manager&lt;/u&gt;
-+updateOrCreateManager(manager : Manager) : void&lt;/u&gt;
-+getTransactionById(id : int) : Transaction&lt;/u&gt;
-+getTransactionsByVendingMachine(vm : VendingMachine) : Collection&lt;Transaction&gt;&lt;/u&gt;
-+getTransactionByCustomer(customer : Customer) : Collection&lt;Transaction&gt;&lt;/u&gt;
-+getTransactionsAll() : Collection&lt;Transaction&gt;&lt;/u&gt;
-+updateOrCreateTransaction(transaction : Transaction) : void&lt;/u&gt;
-+initializeDatabase() : void
-+getCustomersAll() : Collection&lt;Customer&gt;
-+getLocationsAll() : Collection&lt;Location&gt;
-+getManagersAll() : Collection&lt;Manager&gt;
-+getTransactionsByState( String state ) : Collection&lt;Transaction&gt;
-+getTransactionsByZipCode( int zipCode ) : Collection&lt;Transaction&gt;
-+nuke() : void
+-getVMLayoutById(id : int) : VMLayout
 -isCustomerValid(cust : Customer) : boolean
 -isFoodItemValid(item : FoodItem) : boolean
 -isVendingMachineValid(vm : VendingMachine) : boolean
--updateOrCreateRow(row : Row, x : int, y : int, parentLayoutId : int) : void</string>
+-updateOrCreateLocation(location : Location) : void
+-updateOrCreateRow(row : Row, x : int, y : int, parentLayoutId : int) : void
+-updateOrCreateVMLayout(layout : VMLayout) : void
++getCustomerById(id : int) : Customer&lt;/u&gt;
++getCustomersAll() : ArrayList&lt;Customer&gt;
++getFoodItemById(id : int) : FoodItem&lt;/u&gt;
++getFoodItemsAll() : ArrayList&lt;FoodItem&gt;&lt;/u&gt;
++getLocationsAll() : ArrayList&lt;Location&gt;
++getManagerById(id : int) : Manager&lt;/u&gt;
++getManagersAll() : ArrayList&lt;Manager&gt;
++getTransactionByCustomer(customer : Customer) : ArrayList&lt;Transaction&gt;&lt;/u&gt;
++getTransactionById(id : int) : Transaction&lt;/u&gt;
++getTransactionsAll() : ArrayList&lt;Transaction&gt;&lt;/u&gt;
++getTransactionsByFoodItem( FoodItem item ) : ArrayList&lt;Transaction&gt;
++getTransactionsByState( String state ) : ArrayList&lt;Transaction&gt;
++getTransactionsByVendingMachine(vm : VendingMachine) : ArrayList&lt;Transaction&gt;&lt;/u&gt;
++getTransactionsByZipCode( int zipCode ) : ArrayList&lt;Transaction&gt;
++getVendingMachineById(id : int) : VendingMachine&lt;/u&gt;
++getVendingMachinesAll() : ArrayList&lt;VendingMachine&gt;&lt;/u&gt;
++getVendingMachinesByState(state : String): ArrayList&lt;VendingMachine&gt;&lt;/u&gt;
++getVendingMachinesByZip(zip : int) : ArrayList&lt;VendingMachine&gt;&lt;/u&gt;
++initializeDatabase() : void
++nuke() : void
++setDatabaseLocation( String path ) : boolean
++updateOrCreateCustomer(customer : Customer) : void&lt;/u&gt;
++updateOrCreateFoodItem(item : FoodItem) : void&lt;/u&gt;
++updateOrCreateManager(manager : Manager) : void&lt;/u&gt;
++updateOrCreateTransaction(transaction : Transaction) : void&lt;/u&gt;
++updateOrCreateVendingMachine(vm : VendingMachine) : void&lt;/u&gt;</string>
      </void>
     </void>
     <void property="name">
@@ -559,8 +575,8 @@
    </object>
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
-     <double>1290.6790041863244</double>
-     <double>1768.9081275592823</double>
+     <double>1841.2006201675542</double>
+     <double>1053.4111723976935</double>
     </void>
    </object>
   </void>
@@ -589,8 +605,8 @@
    </object>
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
-     <double>964.2515094670802</double>
-     <double>2087.226577970884</double>
+     <double>724.6710547749846</double>
+     <double>1722.5559472515024</double>
     </void>
    </object>
   </void>
@@ -620,8 +636,8 @@
    </object>
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
-     <double>323.4407165820845</double>
-     <double>1684.689586741418</double>
+     <double>297.8644773425213</double>
+     <double>1252.6673178695578</double>
     </void>
    </object>
   </void>
@@ -647,8 +663,8 @@ User</string>
    </object>
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
-     <double>1042.8217838324927</double>
-     <double>1824.283858671369</double>
+     <double>1013.3158236571101</double>
+     <double>1674.76463657178</double>
     </void>
    </object>
   </void>
@@ -676,8 +692,8 @@ User</string>
    </object>
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
-     <double>176.76582964220347</double>
-     <double>1977.7941993158875</double>
+     <double>126.56164255180096</double>
+     <double>1459.4258806879486</double>
     </void>
    </object>
   </void>
@@ -703,8 +719,8 @@ User</string>
    </object>
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
-     <double>1293.7938067373536</double>
-     <double>1604.148615981353</double>
+     <double>1213.1629548809433</double>
+     <double>1503.4456195440978</double>
     </void>
    </object>
   </void>
@@ -737,7 +753,9 @@ have multiplicities for readability&apos;s sake.</string>
     <void property="methods">
      <void property="text">
       <string>+equals(Object other) : boolean
-+toString() : String</string>
++toString() : String
++isTempId() : boolean
++hashCode() : int</string>
      </void>
     </void>
     <void property="name">
@@ -749,8 +767,8 @@ ModelBase</string>
    </object>
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
-     <double>791.0</double>
-     <double>1936.0</double>
+     <double>677.6833874954443</double>
+     <double>1534.9520167563524</double>
     </void>
    </object>
   </void>
@@ -766,7 +784,8 @@ ModelBase</string>
     <void property="methods">
      <void property="text">
       <string>+equals(Object other): boolean
-+toString() : String</string>
++toString() : String
++vmContents() : String</string>
      </void>
     </void>
     <void property="name">
@@ -777,8 +796,8 @@ ModelBase</string>
    </object>
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
-     <double>414.1962185318939</double>
-     <double>2118.0660112061255</double>
+     <double>261.46194254328435</double>
+     <double>1618.7250064182304</double>
     </void>
    </object>
   </void>
@@ -791,8 +810,7 @@ ModelBase</string>
     </void>
     <void property="methods">
      <void property="text">
-      <string>&amp;minus;&lt;u&gt;formatMoney(amount : int) : String&lt;/u&gt;
-&amp;minus;&lt;u&gt;moneyPrompt(prompt : String) : int&lt;/u&gt;
+      <string>&amp;minus;&lt;u&gt;moneyPrompt(prompt : String) : int&lt;/u&gt;
 &amp;minus;&lt;u&gt;option(options : ArrayList&lt;? extends Object&gt;) : int&lt;/u&gt;
 &amp;minus;&lt;u&gt;option(options : String...) : int&lt;/u&gt;
 &amp;minus;&lt;u&gt;printCollection(col : Collection&lt;? extends Object&gt;) : void&lt;/u&gt;
@@ -808,6 +826,8 @@ ModelBase</string>
 &amp;minus;&lt;u&gt;promptInt(prompt : String, allowZero : boolean) : int&lt;/u&gt;
 &amp;minus;&lt;u&gt;promptInt(prompt : String, condition : CLIUtilities.NumberFormat) : int&lt;/u&gt;
 &amp;minus;&lt;u&gt;promptIntDefault(prompt : String, defVal : int) : int&lt;/u&gt;
+&amp;minus;&lt;u&gt;promptObscured(message : String) : String&lt;/u&gt;
+&amp;minus;&lt;u&gt;promptZipCode(prompt : String, length: int) : int&lt;/u&gt;
 &amp;minus;&lt;u&gt;yesOrNo(prompt : String) : boolean&lt;/u&gt;</string>
      </void>
     </void>
@@ -896,8 +916,8 @@ ModelBase</string>
    </object>
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
-     <double>796.0</double>
-     <double>458.0</double>
+     <double>888.0</double>
+     <double>492.0</double>
     </void>
    </object>
   </void>
@@ -920,8 +940,8 @@ ControllerExceptionHandler.Verbosity</string>
    </object>
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
-     <double>1127.0</double>
-     <double>571.0</double>
+     <double>1124.0</double>
+     <double>588.0</double>
     </void>
    </object>
   </void>
@@ -936,8 +956,7 @@ ControllerExceptionHandler.Verbosity</string>
     </void>
     <void property="methods">
      <void property="text">
-      <string>+getId() : int
-+deductMoney(change : int) : boolean
+      <string>+deductMoney(change : int) : boolean
 +isCashCustomer() : boolean
 +equals(Object other) : boolean
 +toString() : String</string>
@@ -951,8 +970,8 @@ ControllerExceptionHandler.Verbosity</string>
    </object>
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
-     <double>919.2248588821442</double>
-     <double>1570.9054444413637</double>
+     <double>921.6032731121496</double>
+     <double>1471.1403965374368</double>
     </void>
    </object>
   </void>
@@ -970,9 +989,6 @@ ControllerExceptionHandler.Verbosity</string>
   </void>
   <void method="connect">
    <object class="com.horstmann.violet.ClassRelationshipEdge">
-    <void property="bentStyle">
-     <object class="com.horstmann.violet.BentStyle" field="VHV"/>
-    </void>
     <void property="endArrowHead">
      <object class="com.horstmann.violet.ArrowHead" field="TRIANGLE"/>
     </void>
@@ -982,9 +998,6 @@ ControllerExceptionHandler.Verbosity</string>
   </void>
   <void method="connect">
    <object class="com.horstmann.violet.ClassRelationshipEdge">
-    <void property="bentStyle">
-     <object class="com.horstmann.violet.BentStyle" field="HVH"/>
-    </void>
     <void property="endArrowHead">
      <object class="com.horstmann.violet.ArrowHead" field="V"/>
     </void>
@@ -1003,9 +1016,6 @@ ControllerExceptionHandler.Verbosity</string>
   </void>
   <void method="connect">
    <object class="com.horstmann.violet.ClassRelationshipEdge">
-    <void property="bentStyle">
-     <object class="com.horstmann.violet.BentStyle" field="HVH"/>
-    </void>
     <void property="endArrowHead">
      <object class="com.horstmann.violet.ArrowHead" field="V"/>
     </void>
@@ -1024,9 +1034,6 @@ ControllerExceptionHandler.Verbosity</string>
   </void>
   <void method="connect">
    <object class="com.horstmann.violet.ClassRelationshipEdge">
-    <void property="bentStyle">
-     <object class="com.horstmann.violet.BentStyle" field="HVH"/>
-    </void>
     <void property="endArrowHead">
      <object class="com.horstmann.violet.ArrowHead" field="V"/>
     </void>
@@ -1045,9 +1052,6 @@ ControllerExceptionHandler.Verbosity</string>
   </void>
   <void method="connect">
    <object class="com.horstmann.violet.ClassRelationshipEdge">
-    <void property="bentStyle">
-     <object class="com.horstmann.violet.BentStyle" field="HVH"/>
-    </void>
     <void property="endArrowHead">
      <object class="com.horstmann.violet.ArrowHead" field="V"/>
     </void>
@@ -1066,9 +1070,6 @@ ControllerExceptionHandler.Verbosity</string>
   </void>
   <void method="connect">
    <object class="com.horstmann.violet.ClassRelationshipEdge">
-    <void property="bentStyle">
-     <object class="com.horstmann.violet.BentStyle" field="HV"/>
-    </void>
     <void property="endArrowHead">
      <object class="com.horstmann.violet.ArrowHead" field="V"/>
     </void>
@@ -1216,9 +1217,6 @@ ControllerExceptionHandler.Verbosity</string>
   </void>
   <void method="connect">
    <object class="com.horstmann.violet.ClassRelationshipEdge">
-    <void property="bentStyle">
-     <object class="com.horstmann.violet.BentStyle" field="VHV"/>
-    </void>
     <void property="endArrowHead">
      <object class="com.horstmann.violet.ArrowHead" field="TRIANGLE"/>
     </void>
@@ -1228,9 +1226,6 @@ ControllerExceptionHandler.Verbosity</string>
   </void>
   <void method="connect">
    <object class="com.horstmann.violet.ClassRelationshipEdge">
-    <void property="bentStyle">
-     <object class="com.horstmann.violet.BentStyle" field="VHV"/>
-    </void>
     <void property="endArrowHead">
      <object class="com.horstmann.violet.ArrowHead" field="TRIANGLE"/>
     </void>
@@ -1240,9 +1235,6 @@ ControllerExceptionHandler.Verbosity</string>
   </void>
   <void method="connect">
    <object class="com.horstmann.violet.ClassRelationshipEdge">
-    <void property="bentStyle">
-     <object class="com.horstmann.violet.BentStyle" field="VHV"/>
-    </void>
     <void property="endArrowHead">
      <object class="com.horstmann.violet.ArrowHead" field="TRIANGLE"/>
     </void>
@@ -1252,9 +1244,6 @@ ControllerExceptionHandler.Verbosity</string>
   </void>
   <void method="connect">
    <object class="com.horstmann.violet.ClassRelationshipEdge">
-    <void property="bentStyle">
-     <object class="com.horstmann.violet.BentStyle" field="VHV"/>
-    </void>
     <void property="endArrowHead">
      <object class="com.horstmann.violet.ArrowHead" field="TRIANGLE"/>
     </void>
@@ -1264,9 +1253,6 @@ ControllerExceptionHandler.Verbosity</string>
   </void>
   <void method="connect">
    <object class="com.horstmann.violet.ClassRelationshipEdge">
-    <void property="bentStyle">
-     <object class="com.horstmann.violet.BentStyle" field="VHV"/>
-    </void>
     <void property="endArrowHead">
      <object class="com.horstmann.violet.ArrowHead" field="TRIANGLE"/>
     </void>
@@ -1276,9 +1262,6 @@ ControllerExceptionHandler.Verbosity</string>
   </void>
   <void method="connect">
    <object class="com.horstmann.violet.ClassRelationshipEdge">
-    <void property="bentStyle">
-     <object class="com.horstmann.violet.BentStyle" field="VHV"/>
-    </void>
     <void property="endArrowHead">
      <object class="com.horstmann.violet.ArrowHead" field="TRIANGLE"/>
     </void>
@@ -1288,9 +1271,6 @@ ControllerExceptionHandler.Verbosity</string>
   </void>
   <void method="connect">
    <object class="com.horstmann.violet.ClassRelationshipEdge">
-    <void property="bentStyle">
-     <object class="com.horstmann.violet.BentStyle" field="VHV"/>
-    </void>
     <void property="endArrowHead">
      <object class="com.horstmann.violet.ArrowHead" field="TRIANGLE"/>
     </void>
@@ -1300,9 +1280,6 @@ ControllerExceptionHandler.Verbosity</string>
   </void>
   <void method="connect">
    <object class="com.horstmann.violet.ClassRelationshipEdge">
-    <void property="bentStyle">
-     <object class="com.horstmann.violet.BentStyle" field="HVH"/>
-    </void>
     <void property="endArrowHead">
      <object class="com.horstmann.violet.ArrowHead" field="V"/>
     </void>
@@ -1321,9 +1298,6 @@ ControllerExceptionHandler.Verbosity</string>
   </void>
   <void method="connect">
    <object class="com.horstmann.violet.ClassRelationshipEdge">
-    <void property="bentStyle">
-     <object class="com.horstmann.violet.BentStyle" field="HVH"/>
-    </void>
     <void property="endArrowHead">
      <object class="com.horstmann.violet.ArrowHead" field="V"/>
     </void>
@@ -1405,9 +1379,6 @@ ControllerExceptionHandler.Verbosity</string>
   </void>
   <void method="connect">
    <object class="com.horstmann.violet.ClassRelationshipEdge">
-    <void property="bentStyle">
-     <object class="com.horstmann.violet.BentStyle" field="HVH"/>
-    </void>
     <void property="endArrowHead">
      <object class="com.horstmann.violet.ArrowHead" field="V"/>
     </void>
@@ -1420,9 +1391,6 @@ ControllerExceptionHandler.Verbosity</string>
   </void>
   <void method="connect">
    <object class="com.horstmann.violet.ClassRelationshipEdge">
-    <void property="bentStyle">
-     <object class="com.horstmann.violet.BentStyle" field="HVH"/>
-    </void>
     <void property="endArrowHead">
      <object class="com.horstmann.violet.ArrowHead" field="V"/>
     </void>
@@ -1441,9 +1409,6 @@ ControllerExceptionHandler.Verbosity</string>
   </void>
   <void method="connect">
    <object class="com.horstmann.violet.ClassRelationshipEdge">
-    <void property="bentStyle">
-     <object class="com.horstmann.violet.BentStyle" field="VHV"/>
-    </void>
     <void property="endArrowHead">
      <object class="com.horstmann.violet.ArrowHead" field="TRIANGLE"/>
     </void>
