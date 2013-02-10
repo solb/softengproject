@@ -343,7 +343,8 @@
      <void property="text">
       <string>&lt;u&gt;-db : DatabaseLayer&lt;/u&gt;
 -user : Customer
--machine : VendingMachine</string>
+-machine : VendingMachine
+-purchasedItem : FoodItem</string>
      </void>
     </void>
     <void property="methods">
@@ -365,8 +366,8 @@
    </object>
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
-     <double>33.0</double>
-     <double>492.0</double>
+     <double>31.0</double>
+     <double>483.0</double>
     </void>
    </object>
   </void>
