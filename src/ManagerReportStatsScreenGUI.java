@@ -262,7 +262,7 @@ public class ManagerReportStatsScreenGUI extends JPanel implements ActionListene
 		//machineList.setMaximumSize(machineList.getPreferredSize());
 		JScrollPane machineScroll = new JScrollPane(machineList);
 		machineScroll.setAlignmentX(LEFT_ALIGNMENT);
-		machineScroll.setPreferredSize(new Dimension(machineList.getPreferredSize().width, machineList.getRowHeight() * (machineList.getRowCount() + 1)+2));
+		machineScroll.setPreferredSize(new Dimension(machineList.getPreferredSize().width, machineList.getRowHeight() * (machineList.getRowCount() + 2)));
 		//machineScroll.setMaximumSize(machineList.getPreferredSize());
 		this.add(machineScroll);
 
@@ -273,7 +273,7 @@ public class ManagerReportStatsScreenGUI extends JPanel implements ActionListene
 		customerList.setAutoCreateRowSorter(true);
 		JScrollPane customerScroll = new JScrollPane(customerList);
 		customerScroll.setAlignmentX(LEFT_ALIGNMENT);
-		customerScroll.setPreferredSize(new Dimension(customerList.getPreferredSize().width, customerList.getRowHeight() * (customerList.getRowCount() + 1)+2));
+		customerScroll.setPreferredSize(new Dimension(customerList.getPreferredSize().width, customerList.getRowHeight() * (customerList.getRowCount() + 2)));
 		this.add(customerScroll);
 
 		add(Box.createRigidArea(new Dimension(0, 20)));
@@ -283,7 +283,7 @@ public class ManagerReportStatsScreenGUI extends JPanel implements ActionListene
 		itemList.setAutoCreateRowSorter(true);
 		JScrollPane itemScroll = new JScrollPane(itemList);
 		itemScroll.setAlignmentX(LEFT_ALIGNMENT);
-		itemScroll.setPreferredSize(new Dimension(itemList.getPreferredSize().width, itemList.getRowHeight() * (itemList.getRowCount() + 1)+2));
+		itemScroll.setPreferredSize(new Dimension(itemList.getPreferredSize().width, itemList.getRowHeight() * (itemList.getRowCount() + 2)));
 		this.add(itemScroll);
 
 		add(Box.createRigidArea(new Dimension(0, 50)));

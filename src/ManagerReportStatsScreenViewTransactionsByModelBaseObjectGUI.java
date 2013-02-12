@@ -154,7 +154,7 @@ public class ManagerReportStatsScreenViewTransactionsByModelBaseObjectGUI extend
 		transactionList.getColumnModel().getColumn(3).setPreferredWidth(150);
 		JScrollPane transactionScroll = new JScrollPane(transactionList);
 		transactionScroll.setAlignmentX(LEFT_ALIGNMENT);
-		transactionScroll.setPreferredSize(new Dimension(transactionList.getPreferredSize().width, transactionList.getRowHeight() * (transactionList.getRowCount() + 1)+2));
+		transactionScroll.setPreferredSize(new Dimension(transactionList.getPreferredSize().width, transactionList.getRowHeight() * (transactionList.getRowCount() + 2)));
 		this.add(transactionScroll);
 		add(Box.createRigidArea(new Dimension(0, 20)));
 		this.add(returnToMainScreenButton);
