@@ -3,11 +3,16 @@
  <object class="com.horstmann.violet.ClassDiagramGraph">
   <void method="addNode">
    <object class="com.horstmann.violet.ClassNode">
+    <void property="attributes">
+     <void property="text">
+      <string>&amp;minus;restockerMachinePickerScreen : RestockerMachinePickerScreen</string>
+     </void>
+    </void>
     <void property="methods">
      <void property="text">
       <string>+&lt;u&gt;main(args : String[]) : void&lt;/u&gt;
--&lt;u&gt;pickMachine(restockerMachinePickerScreen : RestockerMachinePickerScreen) : void&lt;/u&gt;
--&lt;u&gt;listTasks(restockerTaskListScreen : RestockerTaskListScreen) : void&lt;/u&gt;</string>
+&amp;minus;&lt;u&gt;pickMachine(restockerMachinePickerScreen : RestockerMachinePickerScreen) : void&lt;/u&gt;
+&amp;minus;&lt;u&gt;listTasks(restockerTaskListScreen : RestockerTaskListScreen) : void&lt;/u&gt;</string>
      </void>
     </void>
     <void property="name">
@@ -18,8 +23,8 @@
    </object>
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
-     <double>11.0</double>
-     <double>138.0</double>
+     <double>13.0</double>
+     <double>141.0</double>
     </void>
    </object>
   </void>
@@ -28,9 +33,9 @@
     <void property="methods">
      <void property="text">
       <string>+&lt;u&gt;main(args : String[]) : void&lt;/u&gt;
--&lt;u&gt;usage() : void&lt;/u&gt;
--&lt;u&gt;anonymousConnection(wallet : CashCustomerPurchaseScreen) : void&lt;/u&gt;
--&lt;u&gt;productSelection(account : CustomerPurchaseScreen) : void&lt;/u&gt;</string>
+&amp;minus;&lt;u&gt;anonymousConnection(wallet : CashCustomerPurchaseScreen) : void&lt;/u&gt;
+&amp;minus;&lt;u&gt;productSelection(account : CustomerPurchaseScreen) : void&lt;/u&gt;
+&amp;minus;&lt;u&gt;usage() : void&lt;/u&gt;</string>
      </void>
     </void>
     <void property="name">
@@ -51,36 +56,34 @@
     <void property="methods">
      <void property="text">
       <string>+&lt;u&gt;main(args : String[]) : void&lt;/u&gt;
--&lt;u&gt;login() : void&lt;/u&gt;
--&lt;u&gt;home(home : ManagerHomeScreen) : void
--&lt;u&gt;foodItemChooser(items : ArrayList&lt;FoodItem&gt;) : FoodItem&lt;/u&gt;
--&lt;u&gt;editItem(screen : ManagerStockedItemsScreen) : void&lt;/u&gt;
--&lt;u&gt;deactivateMachine(screen : ManagerMachineManagementScreen) : void&lt;/u&gt;
--&lt;u&gt;changeRow(alterLayout : ManagerAlterLayoutScreen) : void&lt;/u&gt;
--&lt;u&gt;changeMachineStockingInterval(screen : ManagerMachineManagementScreen) : void&lt;/u&gt;
--&lt;u&gt;changeMachineLocation(screen : ManagerMachineManagementScreen) : void&lt;/u&gt;
--&lt;u&gt;alterLayout(alterLayout : ManagerAlterLayoutScreen) : void&lt;/u&gt;
--&lt;u&gt;addMachine(screen : ManagerMachineManagementScreen) : void&lt;/u&gt;
--&lt;u&gt;addItem(screen : ManagerStockedItemsScreen) : void&lt;/u&gt;
-
--&lt;u&gt;makeRowEmpty(alterLayout : ManagerAlterLayoutScreen) : void&lt;/u&gt;
--&lt;u&gt;manageCustomers(screen : ManagerUserAccountsScreen) : void&lt;/u&gt;
--&lt;u&gt;manageItems(screen : ManagerStockedItemsScreen) : void&lt;/u&gt;
--&lt;u&gt;manageMachines(screen : ManagerMachineManagementScreen) : void&lt;/u&gt;
--&lt;u&gt;manageManagers(screen : ManagerUserAccountsScreen) : void&lt;/u&gt;
--&lt;u&gt;managerChooser(managers : ArrayList&lt;Manager&gt;) : Manager&lt;/u&gt;
-
--&lt;u&gt;customerChooser(customers : ArrayList&lt;Managers&gt;) : Customer&lt;/u?]&gt;
--&lt;u&gt;manageUsers(screen : ManagerUserAccountsScreen) : void&lt;/u&gt;
--&lt;u&gt;preAlterLayout(screen : ManagerHomeScreen) : void&lt;/u&gt;
--&lt;u&gt;printRow(row : FoodItem) : void&lt;/u&gt;
--&lt;u&gt;reactivateMachine(screen : ManagerMachineManagementScreen) : void&lt;/u&gt;
--&lt;u&gt;viewStatsMachine(screen : ManagerReportStatsScreen) : void&lt;/u&gt;
--&lt;u&gt;viewStatsCustomer(screen : ManagerReportStatsScreen) : void&lt;/u&gt;
--&lt;u&gt;viewStatsProduct(screen : ManagerReportStatsScreen) : void&lt;/u&gt;
--&lt;u&gt;viewStats(screen : ManagerReportStatsScreen) : void&lt;/u&gt;
--&lt;u&gt;viewStatsAll(screen : ManagerReportStatsScreen) : void&lt;/u&gt;
--&lt;u&gt;vmChooser(machines : ArrayList&lt;VendingMachine&gt;) : VendingMachine&lt;/u&gt;</string>
+&amp;minus;&lt;u&gt;addItem(screen : ManagerStockedItemsScreen) : void&lt;/u&gt;
+&amp;minus;&lt;u&gt;addMachine(screen : ManagerMachineManagementScreen) : void&lt;/u&gt;
+&amp;minus;&lt;u&gt;alterLayout(alterLayout : ManagerAlterLayoutScreen) : void&lt;/u&gt;
+&amp;minus;&lt;u&gt;changeMachineLocation(screen : ManagerMachineManagementScreen) : void&lt;/u&gt;
+&amp;minus;&lt;u&gt;changeMachineStockingInterval(screen : ManagerMachineManagementScreen) : void&lt;/u&gt;
+&amp;minus;&lt;u&gt;changeRow(alterLayout : ManagerAlterLayoutScreen) : void&lt;/u&gt;
+&amp;minus;&lt;u&gt;customerChooser(customers : ArrayList&lt;Managers&gt;) : Customer&lt;/u&gt;
+&amp;minus;&lt;u&gt;deactivateMachine(screen : ManagerMachineManagementScreen) : void&lt;/u&gt;
+&amp;minus;&lt;u&gt;editItem(screen : ManagerStockedItemsScreen) : void&lt;/u&gt;
+&amp;minus;&lt;u&gt;foodItemChooser(items : ArrayList&lt;FoodItem&gt;) : FoodItem&lt;/u&gt;
+&amp;minus;&lt;u&gt;home(home : ManagerHomeScreen) : void&lt;/u&gt;
+&amp;minus;&lt;u&gt;login() : void&lt;/u&gt;
+&amp;minus;&lt;u&gt;makeRowEmpty(alterLayout : ManagerAlterLayoutScreen) : void&lt;/u&gt;
+&amp;minus;&lt;u&gt;manageCustomers(screen : ManagerUserAccountsScreen) : void&lt;/u&gt;
+&amp;minus;&lt;u&gt;manageItems(screen : ManagerStockedItemsScreen) : void&lt;/u&gt;
+&amp;minus;&lt;u&gt;manageMachines(screen : ManagerMachineManagementScreen) : void&lt;/u&gt;
+&amp;minus;&lt;u&gt;manageManagers(screen : ManagerUserAccountsScreen) : void&lt;/u&gt;
+&amp;minus;&lt;u&gt;managerChooser(managers : ArrayList&lt;Manager&gt;) : Manager&lt;/u&gt;
+&amp;minus;&lt;u&gt;manageUsers(screen : ManagerUserAccountsScreen) : void&lt;/u&gt;
+&amp;minus;&lt;u&gt;preAlterLayout(screen : ManagerHomeScreen) : void&lt;/u&gt;
+&amp;minus;&lt;u&gt;printRow(row : FoodItem) : void&lt;/u&gt;
+&amp;minus;&lt;u&gt;reactivateMachine(screen : ManagerMachineManagementScreen) : void&lt;/u&gt;
+&amp;minus;&lt;u&gt;viewStats(screen : ManagerReportStatsScreen) : void&lt;/u&gt;
+&amp;minus;&lt;u&gt;viewStatsAll(screen : ManagerReportStatsScreen) : void&lt;/u&gt;
+&amp;minus;&lt;u&gt;viewStatsCustomer(screen : ManagerReportStatsScreen) : void&lt;/u&gt;
+&amp;minus;&lt;u&gt;viewStatsMachine(screen : ManagerReportStatsScreen) : void&lt;/u&gt;
+&amp;minus;&lt;u&gt;viewStatsProduct(screen : ManagerReportStatsScreen) : void&lt;/u&gt;
+&amp;minus;&lt;u&gt;vmChooser(machines : ArrayList&lt;VendingMachine&gt;) : VendingMachine&lt;/u&gt;</string>
      </void>
     </void>
     <void property="name">
@@ -91,7 +94,7 @@
    </object>
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
-     <double>564.0</double>
+     <double>586.0</double>
      <double>3.0</double>
     </void>
    </object>
@@ -159,19 +162,20 @@
    <object id="ClassNode2" class="com.horstmann.violet.ClassNode">
     <void property="attributes">
      <void property="text">
-      <string>&lt;u&gt;-db : DatabaseLayer&lt;/u&gt;
--machines : Collection&lt;VendingMachine&gt;
--locations : Collection&lt;Location&gt;</string>
+      <string>&amp;minus;customers : ArrayList&lt;Customer&gt;
+&amp;minus;&lt;u&gt;db : DatabaseLayer&lt;/u&gt;
+&amp;minus;items : ArrayList&lt;FoodItem&gt;
+&amp;minus;machines : Collection&lt;VendingMachine&gt;</string>
      </void>
     </void>
     <void property="methods">
      <void property="text">
       <string>+listCustomers() : ArrayList&lt;Customer&gt;
-+listCustomerSales() : ArrayList&lt;Transaction&gt;
++listCustomerSales(customer : Customer) : ArrayList&lt;Transaction&gt;
++listFoodItems() : ArrayList&lt;Transaction&gt;
++listFoodItemSales(item : FoodItem) : ArrayList&lt;Transaction&gt;
 +listMachines() : ArrayList&lt;VendingMachine&gt;
 +listMachineSales(machine : VendingMachine) : ArrayList&lt;Transaction&gt;
-+listLocations() : ArrayList&lt;Location&gt;
-+listLocationSales(place : Location) : ArrayList&lt;Transaction&gt;
 +listSalesAll() : ArrayList&lt;Transaction&gt;</string>
      </void>
     </void>
@@ -184,7 +188,7 @@
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
      <double>1645.7289967240101</double>
-     <double>660.5161906339191</double>
+     <double>665.5161906339191</double>
     </void>
    </object>
   </void>
@@ -198,15 +202,16 @@
     </void>
     <void property="methods">
      <void property="text">
-      <string>+listMachinesAll() : ArrayList&lt;VendingMachine&gt;
-+listMachinesByLocation(loc : Location) : ArrayList&lt;VendingMachine&gt;
-+listDeactiveMachines() : ArrayList&lt;VendingMachine&gt;
-+listActiveMachines() : ArrayList&lt;VendingMachine&gt;
+      <string>+addMachine(zipCode : int, state : String, nearbyBusinesses : String[], interval : int, layout : VMLayout) : int
++changeMachineLocation(vm : VendingMachine, zipCode : int, state : String, nearbyBusinesses : String[]) : boolean
 +changeMachineStockingInterval(vm : VendingMachine, interval : int) : int
-+addMachine(zipCode : int, state : String, nearbyBusinesses : String[], interval : int, layout : VMLayout) : int
 +deactivateMachine(vm : VendingMachine) : boolean
++listActiveMachines() : ArrayList&lt;VendingMachine&gt;
++listDeactiveMachines() : ArrayList&lt;VendingMachine&gt;
++listMachinesByLocation(loc : Location) : ArrayList&lt;VendingMachine&gt;
++listMachinessAll() : ArrayList&lt;VendingMachine&gt;
 +reactivateMachine(vm : VendingMachine) : boolean
-+changeMachineLocation(vm : VendingMachine, zipCode : int, state : String, nearbyBusinesses : String[]) : boolean</string>
++stockingIntervalValidity(vm : VendingMachine, interval : int)</string>
      </void>
     </void>
     <void property="name">
@@ -242,8 +247,8 @@
    </object>
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
-     <double>1578.9536136691286</double>
-     <double>559.9426871099329</double>
+     <double>1569.9536136691286</double>
+     <double>413.9426871099329</double>
     </void>
    </object>
   </void>
@@ -251,18 +256,18 @@
    <object id="ClassNode4" class="com.horstmann.violet.ClassNode">
     <void property="attributes">
      <void property="text">
-      <string>&lt;u&gt;-db : DatabaseLayer&lt;/u&gt;
--customers : ArrayList&lt;Customer&gt;
--managers : ArrayList&lt;Manager&gt;</string>
+      <string>&amp;minus;customers : ArrayList&lt;Customer&gt;
+&amp;minus;&lt;u&gt;db : DatabaseLayer&lt;/u&gt;
+&amp;minus;managers : ArrayList&lt;Manager&gt;</string>
      </void>
     </void>
     <void property="methods">
      <void property="text">
-      <string>+listCustomers() : ArrayList&lt;Customer&gt;
-+listManagers() : ArrayList&lt;Manager&gt;
-+addCustomer(name : String, initialBalance : int) : int
+      <string>+addCustomer(name : String, initialBalance : int) : int
 +addManager(name : String, startingPassword : String) : int
-+changePassword(manny : Manager, newPassword : String) : boolean</string>
++changePassword(manny : Manager, newPassword : String) : boolean
++listCustomers() : ArrayList&lt;Customer&gt;
++listManagers() : ArrayList&lt;Manager&gt;</string>
      </void>
     </void>
     <void property="name">
@@ -282,20 +287,20 @@
    <object id="ClassNode5" class="com.horstmann.violet.ClassNode">
     <void property="attributes">
      <void property="text">
-      <string>&lt;u&gt;+FAILURE_KEY : int&lt;/u&gt;
-&lt;u&gt;-db : DatabaseLayer&lt;/u&gt;
--stockpile : ArrayList&lt;FoodItem&gt;</string>
+      <string>&amp;minus;&lt;u&gt;db : DatabaseLayer&lt;/u&gt;
++&lt;u&gt;FAILURE_KEY : int&lt;/u&gt;
+&amp;minus;stockpile : ArrayList&lt;FoodItem&gt;</string>
      </void>
     </void>
     <void property="methods">
      <void property="text">
-      <string>+listItems() : ArrayList&lt;FoodItem&gt;
-+addItem(name : String, price : int, freshLength : long) : int
+      <string>+addItem(name : String, price : int, freshLength : long) : int
 +addItem(name : String, price : int, freshLength : long, activated : boolean) : int
-+changeItemStatus(item : FoodItem, val : boolean) : boolean
++changeItemFreshLength(item : FoodItem, freshLength : long) : boolean
 +changeItemName(item : FoodItem, name : String) : boolean
 +changeItemPrice(item : FoodItem, price : int) : boolean
-+changeItemFreshLength(item : FoodItem, freshLength : long) : boolean</string>
++changeItemStatus(item : FoodItem, val : boolean) : boolean
++listItems() : ArrayList&lt;FoodItem&gt;</string>
      </void>
     </void>
     <void property="name">
@@ -426,19 +431,20 @@
    <object class="com.horstmann.violet.ClassNode">
     <void property="attributes">
      <void property="text">
-      <string>-manny : Manager
-&lt;u&gt;-db : DatabaseLayer&lt;/u&gt;</string>
+      <string>&amp;minus;&lt;u&gt;db : DatabaseLayer&lt;/u&gt;
+&amp;minus;manny : Manager
+</string>
      </void>
     </void>
     <void property="methods">
      <void property="text">
-      <string>+displayVendingMachines() : ArrayList&lt;VendingMachine&gt;
+      <string>+alterLayout() : ManagerAlterLayoutScreen
++displayVendingMachines() : ArrayList&lt;VendingMachine&gt;
 +getUserName() : String
-+viewStats() : ManagerReportStatsScreen
-+alterLayout() : ManagerAlterLayoutScreen
 +manageItems() : ManagerStockedItemsScreen
 +manageMachines() : ManagerMachineManagementScreen
-+manageUsers() : ManagerUserAccountsScreen</string>
++manageUsers() : ManagerUserAccountsScreen
++viewStats() : ManagerReportStatsScreen</string>
      </void>
     </void>
     <void property="name">
@@ -449,8 +455,8 @@
    </object>
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
-     <double>1558.0381280166466</double>
-     <double>379.27896369517254</double>
+     <double>1559.0381280166466</double>
+     <double>491.27896369517254</double>
     </void>
    </object>
   </void>
@@ -489,17 +495,16 @@
    <object id="ClassNode10" class="com.horstmann.violet.ClassNode">
     <void property="attributes">
      <void property="text">
-      <string>&amp;minus;zipCode : int
+      <string>&amp;minus;nearbyBusinesses : String[]
 &amp;minus;state : String
-&amp;minus;nearbyBusinesses : String[]</string>
+&amp;minus;zipCode : int</string>
      </void>
     </void>
     <void property="methods">
      <void property="text">
-      <string>+retrieveFormattedZipCode() : String
-+equals(Object other): boolean
-+toString() : String
-</string>
+      <string>+equals(Object other): boolean
++retrieveFormattedZipCode() : String
++toString() : String</string>
      </void>
     </void>
     <void property="name">
@@ -519,53 +524,55 @@
    <object class="com.horstmann.violet.ClassNode">
     <void property="attributes">
      <void property="text">
-      <string>+&lt;u&gt;DEFAULT_DB_LOCATION : String&lt;/u&gt;
-- &lt;u&gt;DB_DRIVER : String&lt;/u&gt;
-- &lt;u&gt;DRIVER_CLASS : String&lt;/u&gt;
-- &lt;u&gt;dbLocation : String&lt;/u&gt;
-- &lt;u&gt;instance : DatabaseLayer&lt;/u&gt;
-- db : Connection</string>
+      <string>&amp;minus;&lt;u&gt;DB_DRIVER : String&lt;/u&gt;
+&amp;minus;dbInstance : String
+&amp;minus;&lt;u&gt;dbLocation : String&lt;/u&gt;
+&amp;minus;dbUseCounter : int
++&lt;u&gt;DEFAULT_DB_LOCATION : String&lt;/u&gt;
+&amp;minus;&lt;u&gt;DRIVER_CLASS : String&lt;/u&gt;
+&amp;minus;&lt;u&gt;instance : DatabaseLayer&lt;/u&gt;</string>
      </void>
     </void>
     <void property="methods">
      <void property="text">
       <string>+&lt;u&gt;getInstance() : DatabaseLayer&lt;/u&gt;
 +&lt;u&gt;setDatabaseLocation(path : String) : boolean&lt;/u&gt;
-- DatabaseLayer()
--getLocationById(id : int) : Location
--getVMLayoutById(id : int) : VMLayout
--isCustomerValid(cust : Customer) : boolean
--isFoodItemValid(item : FoodItem) : boolean
--isVendingMachineValid(vm : VendingMachine) : boolean
--updateOrCreateLocation(location : Location) : void
--updateOrCreateRow(row : Row, x : int, y : int, parentLayoutId : int) : void
--updateOrCreateVMLayout(layout : VMLayout) : void
-+getCustomerById(id : int) : Customer&lt;/u&gt;
+&amp;minus;closeConnection() : void
+&amp;minus;connect() : Connection
++getCustomerById(id : int) : Customer
 +getCustomersAll() : ArrayList&lt;Customer&gt;
-+getFoodItemById(id : int) : FoodItem&lt;/u&gt;
-+getFoodItemsAll() : ArrayList&lt;FoodItem&gt;&lt;/u&gt;
++getFoodItemById(id : int) : FoodItem
++getFoodItemsAll() : ArrayList&lt;FoodItem&gt;
+&amp;minus;getLocationById(id : int) : Location
 +getLocationsAll() : ArrayList&lt;Location&gt;
-+getManagerById(id : int) : Manager&lt;/u&gt;
++getManagerById(id : int) : Manager
 +getManagersAll() : ArrayList&lt;Manager&gt;
-+getTransactionByCustomer(customer : Customer) : ArrayList&lt;Transaction&gt;&lt;/u&gt;
-+getTransactionById(id : int) : Transaction&lt;/u&gt;
-+getTransactionsAll() : ArrayList&lt;Transaction&gt;&lt;/u&gt;
+&amp;minus;getRowsByVMLayoutId(layoutId : int) : LinkedList&lt;Pair&lt;Row, Pair&lt;Integer, Integer&gt;&gt;&gt;
++getTransactionById(id : int) : Transaction
++getTransactionsAll() : ArrayList&lt;Transaction&gt;
++getTransactionByCustomer(customer : Customer) : ArrayList&lt;Transaction&gt;
 +getTransactionsByFoodItem( FoodItem item ) : ArrayList&lt;Transaction&gt;
 +getTransactionsByState( String state ) : ArrayList&lt;Transaction&gt;
-+getTransactionsByVendingMachine(vm : VendingMachine) : ArrayList&lt;Transaction&gt;&lt;/u&gt;
++getTransactionsByVendingMachine(vm : VendingMachine) : ArrayList&lt;Transaction&gt;
 +getTransactionsByZipCode( int zipCode ) : ArrayList&lt;Transaction&gt;
-+getVendingMachineById(id : int) : VendingMachine&lt;/u&gt;
-+getVendingMachinesAll() : ArrayList&lt;VendingMachine&gt;&lt;/u&gt;
-+getVendingMachinesByState(state : String): ArrayList&lt;VendingMachine&gt;&lt;/u&gt;
-+getVendingMachinesByZip(zip : int) : ArrayList&lt;VendingMachine&gt;&lt;/u&gt;
-+initializeDatabase() : void
++getVendingMachineById(id : int) : VendingMachine
++getVendingMachinesAll() : ArrayList&lt;VendingMachine&gt;
++getVendingMachinesByState(state : String): ArrayList&lt;VendingMachine&gt;
++getVendingMachinesByZip(zip : int) : ArrayList&lt;VendingMachine&gt;&lt;/u&gt;getLocationById(id : int) : Location
++getVMLayoutById(id : int) : VMLayout
+&amp;minus;initializeDatabase() : void
+&amp;minus;isCustomerValid(cust : Customer) : boolean
+&amp;minus;isFoodItemValid(item : FoodItem) : boolean
+&amp;minus;isVendingMachineValid(vm : VendingMachine) : boolean
 +nuke() : void
-+setDatabaseLocation( String path ) : boolean
-+updateOrCreateCustomer(customer : Customer) : void&lt;/u&gt;
-+updateOrCreateFoodItem(item : FoodItem) : void&lt;/u&gt;
-+updateOrCreateManager(manager : Manager) : void&lt;/u&gt;
-+updateOrCreateTransaction(transaction : Transaction) : void&lt;/u&gt;
-+updateOrCreateVendingMachine(vm : VendingMachine) : void&lt;/u&gt;</string>
++updateOrCreateCustomer(customer : Customer) : void
++updateOrCreateFoodItem(item : FoodItem) : void
++updateOrCreateLocation(location : Location) : void
++updateOrCreateManager(manager : Manager) : void
+&amp;minus;updateOrCreateRow(row : Row, x : int, y : int, parentLayoutId : int) : void
++updateOrCreateTransaction(transaction : Transaction) : void
++updateOrCreateVendingMachine(vm : VendingMachine) : void
+&amp;minus;updateOrCreateVMLayout(layout : VMLayout) : void</string>
      </void>
     </void>
     <void property="name">
@@ -673,10 +680,10 @@ User</string>
    <object id="ClassNode14" class="com.horstmann.violet.ClassNode">
     <void property="attributes">
      <void property="text">
-      <string>&amp;minus;name : String
-&amp;minus;price : int
+      <string>&amp;minus;active : boolean
 &amp;minus;freshLength : long
-&amp;minus:active : boolean</string>
+&amp;minus;name : String
+&amp;minus;price : int</string>
      </void>
     </void>
     <void property="methods">
@@ -745,18 +752,19 @@ have multiplicities for readability&apos;s sake.</string>
    <object id="ClassNode16" class="com.horstmann.violet.ClassNode">
     <void property="attributes">
      <void property="text">
-      <string>+&lt;u&gt;MIN_ID : int&lt;/u&gt;
+      <string>&amp;minus;id : int
++&lt;u&gt;ID_SPACES : int&lt;/u&gt;
++&lt;u&gt;MIN_ID : int&lt;/u&gt;
 &amp;minus;&lt;u&gt;TEMP_ID : int&lt;/u&gt;
-&amp;minus;&lt;u&gt;TEMP_ID : int&lt;/u&gt;
-&amp;minus;id : int</string>
+</string>
      </void>
     </void>
     <void property="methods">
      <void property="text">
       <string>+equals(Object other) : boolean
-+toString() : String
++hashCode() : int
 +isTempId() : boolean
-+hashCode() : int</string>
++toString() : String</string>
      </void>
     </void>
     <void property="name">
@@ -806,30 +814,32 @@ ModelBase</string>
    <object id="ClassNode18" class="com.horstmann.violet.ClassNode">
     <void property="attributes">
      <void property="text">
-      <string>&amp;minus;&lt;u&gt;scan : Scanner&lt;/u&gt;</string>
+      <string>&amp;minus;&lt;u&gt;scan : Scanner&lt;/u&gt;
+&amp;minus;&lt;u&gt;STDOUT_WRAPPER : CLIUtilities.PrintStreamValidationComplainer&lt;/u&gt;</string>
      </void>
     </void>
     <void property="methods">
      <void property="text">
-      <string>&amp;minus;&lt;u&gt;moneyPrompt(prompt : String) : int&lt;/u&gt;
-&amp;minus;&lt;u&gt;option(options : ArrayList&lt;? extends Object&gt;) : int&lt;/u&gt;
-&amp;minus;&lt;u&gt;option(options : String...) : int&lt;/u&gt;
-&amp;minus;&lt;u&gt;printCollection(col : Collection&lt;? extends Object&gt;) : void&lt;/u&gt;
-&amp;minus;&lt;u&gt;printLayout(rows : FoodItem[][]) : void&lt;/u&gt;
-&amp;minus;&lt;u&gt;printLayout(rows : FoodItem[][], hideInactive : boolean) : void&lt;/u&gt;
-&amp;minus;&lt;u&gt;printLayout(rows : Row[][]) : void&lt;/u&gt;
-&amp;minus;&lt;u&gt;printLayout(rows : Row[][], hideInactive : boolean) : void&lt;/u&gt;
-&amp;minus;&lt;u&gt;printLayout(layout : VMLayout) : void&lt;/u&gt;
-&amp;minus;&lt;u&gt;printLayout(layout : VMLayout, hideInactive : boolean) : void&lt;/u&gt;
-&amp;minus;&lt;u&gt;printTitle(name : String) : void&lt;/u&gt;
-&amp;minus;&lt;u&gt;prompt(message : String) : String&lt;/u&gt;
-&amp;minus;&lt;u&gt;promptInt(prompt : String) : int&lt;/u&gt;
-&amp;minus;&lt;u&gt;promptInt(prompt : String, allowZero : boolean) : int&lt;/u&gt;
-&amp;minus;&lt;u&gt;promptInt(prompt : String, condition : CLIUtilities.NumberFormat) : int&lt;/u&gt;
-&amp;minus;&lt;u&gt;promptIntDefault(prompt : String, defVal : int) : int&lt;/u&gt;
-&amp;minus;&lt;u&gt;promptObscured(message : String) : String&lt;/u&gt;
-&amp;minus;&lt;u&gt;promptZipCode(prompt : String, length: int) : int&lt;/u&gt;
-&amp;minus;&lt;u&gt;yesOrNo(prompt : String) : boolean&lt;/u&gt;</string>
+      <string>+&lt;u&gt;moneyPrompt(prompt : String) : int&lt;/u&gt;
++&lt;u&gt;option(options : ArrayList&lt;? extends Object&gt;) : int&lt;/u&gt;
++&lt;u&gt;option(options : String...) : int&lt;/u&gt;
++&lt;u&gt;printCollection(col : Collection&lt;? extends Object&gt;) : void&lt;/u&gt;
++&lt;u&gt;printLayout(rows : FoodItem[][]) : void&lt;/u&gt;
++&lt;u&gt;printLayout(rows : FoodItem[][], hideInactive : boolean) : void&lt;/u&gt;
++&lt;u&gt;printLayout(rows : Row[][]) : void&lt;/u&gt;
++&lt;u&gt;printLayout(rows : Row[][], hideInactive : boolean) : void&lt;/u&gt;
++&lt;u&gt;printLayout(layout : VMLayout) : void&lt;/u&gt;
++&lt;u&gt;printLayout(layout : VMLayout, hideInactive : boolean) : void&lt;/u&gt;
++&lt;u&gt;printTitle(name : String) : void&lt;/u&gt;
++&lt;u&gt;prompt(message : String) : String&lt;/u&gt;
++&lt;u&gt;promptInt(prompt : String) : int&lt;/u&gt;
++&lt;u&gt;promptInt(prompt : String, allowZero : boolean) : int&lt;/u&gt;
++&lt;u&gt;promptInt(prompt : String, condition : NumberFormat) : int&lt;/u&gt;
++&lt;u&gt;promptIntDefault(prompt : String, defVal : int) : int&lt;/u&gt;
++&lt;u&gt;promptIntDefault(prompt : String, condition : NumberFormat&lt;/u&gt;
++&lt;u&gt;promptObscured(message : String) : String&lt;/u&gt;
++&lt;u&gt;promptZipCode(prompt : String, length: int) : int&lt;/u&gt;
++&lt;u&gt;yesOrNo(prompt : String) : boolean&lt;/u&gt;</string>
      </void>
     </void>
     <void property="name">
@@ -840,16 +850,23 @@ ModelBase</string>
    </object>
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
-     <double>1157.0</double>
-     <double>44.0</double>
+     <double>1193.0</double>
+     <double>10.0</double>
     </void>
    </object>
   </void>
   <void method="addNode">
    <object id="ClassNode19" class="com.horstmann.violet.ClassNode">
+    <void property="attributes">
+     <void property="text">
+      <string>&amp;minus;&lt;u&gt;communicator : ValidationComplainer&lt;/u&gt;</string>
+     </void>
+    </void>
     <void property="methods">
      <void property="text">
-      <string>+checkLoudly(input : int, cont : boolean) : boolean
+      <string>+checkLoudly(input : int) : boolean
++checkLoudly(input : int, cont : boolean) : boolean
++&lt;u&gt;setCommunicator(communicator : ValidationComplainer) : boolean&lt;/u&gt;
 +&lt;i&gt;toString() : String&lt;/i&gt;
 +&lt;i&gt;validate(input : int) : boolean&lt;/i&gt;
 </string>
@@ -857,14 +874,15 @@ ModelBase</string>
     </void>
     <void property="name">
      <void property="text">
-      <string>CLIUtilities.NumberFormat</string>
+      <string>«abstract»
+NumberFormat</string>
      </void>
     </void>
    </object>
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
-     <double>1636.0</double>
-     <double>52.0</double>
+     <double>1660.0</double>
+     <double>5.0</double>
     </void>
    </object>
   </void>
@@ -873,26 +891,27 @@ ModelBase</string>
     <void property="attributes">
      <void property="text">
       <string>&amp;minus;MINIMUM : int
-+&lt;u&gt;ZERO : CLIUtilities.MinValueNumberFormat&lt;/u&gt;
-+&lt;u&gt;ONE : CLIUtilities.MinValueNumberFormat&lt;/u&gt;</string>
++&lt;u&gt;ONE : CLIUtilities.MinValueNumberFormat&lt;/u&gt;
++&lt;u&gt;ZERO : CLIUtilities.MinValueNumberFormat&lt;/u&gt;</string>
      </void>
     </void>
     <void property="methods">
      <void property="text">
-      <string>+toString() : String
+      <string>+getMinimum() : int
++toString() : String
 +validate(input : int) : boolean</string>
      </void>
     </void>
     <void property="name">
      <void property="text">
-      <string>CLIUtilities.MinValueNumberFormat</string>
+      <string>MinValueNumberFormat</string>
      </void>
     </void>
    </object>
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
-     <double>1635.0</double>
-     <double>220.0</double>
+     <double>1742.0</double>
+     <double>166.0</double>
     </void>
    </object>
   </void>
@@ -900,8 +919,8 @@ ModelBase</string>
    <object id="ClassNode21" class="com.horstmann.violet.ClassNode">
     <void property="attributes">
      <void property="text">
-      <string>&amp;minus;&lt;u&gt;ERROR_EXIT_CODE&lt;/u&gt;
-&amp;minus;&lt;u&gt;VERBOSITY&lt;/u&gt;</string>
+      <string>&amp;minus;&lt;u&gt;ERROR_EXIT_CODE : int&lt;/u&gt;
+&amp;minus;&lt;u&gt;VERBOSITY : ControllerExceptionHandler.Verbosity&lt;/u&gt;</string>
      </void>
     </void>
     <void property="methods">
@@ -917,8 +936,8 @@ ModelBase</string>
    </object>
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
-     <double>888.0</double>
-     <double>492.0</double>
+     <double>872.0</double>
+     <double>490.0</double>
     </void>
    </object>
   </void>
@@ -926,10 +945,10 @@ ModelBase</string>
    <object id="InterfaceNode0" class="com.horstmann.violet.InterfaceNode">
     <void property="methods">
      <void property="text">
-      <string>ERROR
-FATAL
-INFO
-WARN</string>
+      <string>FATAL
+ERROR
+WARN
+INFO</string>
      </void>
     </void>
     <void property="name">
@@ -951,13 +970,14 @@ ControllerExceptionHandler.Verbosity</string>
     <void property="attributes">
      <void property="text">
       <string>+&lt;u&gt;CASH_NAME : String&lt;/u&gt;
-&amp;minus;&lt;u&gt;CASH_ID : int&lt;/u&gt;
++&lt;u&gt;CASH_ID : int&lt;/u&gt;
 &amp;minus;money : int</string>
      </void>
     </void>
     <void property="methods">
      <void property="text">
       <string>+deductMoney(change : int) : boolean
++equals(another : Object)
 +isCashCustomer() : boolean
 +equals(Object other) : boolean
 +toString() : String</string>
@@ -971,8 +991,86 @@ ControllerExceptionHandler.Verbosity</string>
    </object>
    <object class="java.awt.geom.Point2D$Double">
     <void method="setLocation">
-     <double>921.6032731121496</double>
-     <double>1471.1403965374368</double>
+     <double>924.6032731121496</double>
+     <double>1454.1403965374368</double>
+    </void>
+   </object>
+  </void>
+  <void method="addNode">
+   <object id="ClassNode23" class="com.horstmann.violet.ClassNode">
+    <void property="attributes">
+     <void property="text">
+      <string>-stream : PrintStream</string>
+     </void>
+    </void>
+    <void property="methods">
+     <void property="text">
+      <string>+alert(message : String) : void</string>
+     </void>
+    </void>
+    <void property="name">
+     <void property="text">
+      <string>CLIUtilities.PrintStreamValidationComplainer</string>
+     </void>
+    </void>
+   </object>
+   <object class="java.awt.geom.Point2D$Double">
+    <void method="setLocation">
+     <double>1180.0</double>
+     <double>389.0</double>
+    </void>
+   </object>
+  </void>
+  <void method="addNode">
+   <object id="ClassNode24" class="com.horstmann.violet.ClassNode">
+    <void property="attributes">
+     <void property="text">
+      <string>&amp;minus;UPPER : int</string>
+     </void>
+    </void>
+    <void property="methods">
+     <void property="text">
+      <string>+toString() : String
++validate(input : int) : boolean</string>
+     </void>
+    </void>
+    <void property="name">
+     <void property="text">
+      <string>DoublyBoundedNumberFormat</string>
+     </void>
+    </void>
+   </object>
+   <object class="java.awt.geom.Point2D$Double">
+    <void method="setLocation">
+     <double>1759.0</double>
+     <double>310.0</double>
+    </void>
+   </object>
+  </void>
+  <void method="addNode">
+   <object class="com.horstmann.violet.ClassNode">
+    <void property="attributes">
+     <void property="text">
+      <string>+first : L
++second : R</string>
+     </void>
+    </void>
+    <void property="methods">
+     <void property="text">
+      <string>+equals(another : Object) : boolean
++toString() : String</string>
+     </void>
+    </void>
+    <void property="name">
+     <void property="text">
+      <string>Pair&lt;L, R&gt;</string>
+     </void>
+    </void>
+   </object>
+   <object class="java.awt.geom.Point2D$Double">
+    <void method="setLocation">
+     <double>1400.0</double>
+     <double>1663.0</double>
     </void>
    </object>
   </void>
@@ -1336,30 +1434,6 @@ ControllerExceptionHandler.Verbosity</string>
      <object class="com.horstmann.violet.ArrowHead" field="V"/>
     </void>
    </object>
-   <object idref="ClassNode18"/>
-   <object idref="ClassNode20"/>
-  </void>
-  <void method="connect">
-   <object class="com.horstmann.violet.ClassRelationshipEdge">
-    <void property="bentStyle">
-     <object class="com.horstmann.violet.BentStyle" field="HVH"/>
-    </void>
-    <void property="endArrowHead">
-     <object class="com.horstmann.violet.ArrowHead" field="V"/>
-    </void>
-   </object>
-   <object idref="ClassNode18"/>
-   <object idref="ClassNode19"/>
-  </void>
-  <void method="connect">
-   <object class="com.horstmann.violet.ClassRelationshipEdge">
-    <void property="bentStyle">
-     <object class="com.horstmann.violet.BentStyle" field="HVH"/>
-    </void>
-    <void property="endArrowHead">
-     <object class="com.horstmann.violet.ArrowHead" field="V"/>
-    </void>
-   </object>
    <object idref="InterfaceNode0"/>
    <object idref="ClassNode21"/>
   </void>
@@ -1416,6 +1490,30 @@ ControllerExceptionHandler.Verbosity</string>
    </object>
    <object idref="ClassNode22"/>
    <object idref="ClassNode13"/>
+  </void>
+  <void method="connect">
+   <object class="com.horstmann.violet.ClassRelationshipEdge">
+    <void property="bentStyle">
+     <object class="com.horstmann.violet.BentStyle" field="HVH"/>
+    </void>
+    <void property="endArrowHead">
+     <object class="com.horstmann.violet.ArrowHead" field="V"/>
+    </void>
+   </object>
+   <object idref="ClassNode23"/>
+   <object idref="ClassNode18"/>
+  </void>
+  <void method="connect">
+   <object class="com.horstmann.violet.ClassRelationshipEdge">
+    <void property="bentStyle">
+     <object class="com.horstmann.violet.BentStyle" field="VHV"/>
+    </void>
+    <void property="endArrowHead">
+     <object class="com.horstmann.violet.ArrowHead" field="TRIANGLE"/>
+    </void>
+   </object>
+   <object idref="ClassNode24"/>
+   <object idref="ClassNode20"/>
   </void>
  </object>
 </java>
